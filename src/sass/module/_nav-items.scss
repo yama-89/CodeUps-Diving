@@ -1,0 +1,33 @@
+@use "global" as *;
+
+.nav-items {
+  color: $base;
+}
+
+.nav-items__title {
+  position: relative;
+  font-size: rem(16);
+  line-height: calc(18/16);
+  font-weight: $bold;
+  padding-left: rem(24);
+  @include mq(md){
+  }
+}
+
+.nav-items__title::before {
+  content: "";
+  display: inline-block;
+  background-image: url(/dist/assets/images/common/nav-icon.png);
+  width: rem(18);
+  height: rem(18);
+  position: absolute;
+  background-size: contain;
+  vertical-align: middle;
+  left: 0;
+}
+
+.nav-items__title:not(:first-of-type) {
+  margin-top: rem(40);
+}
+
+

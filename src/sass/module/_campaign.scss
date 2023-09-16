@@ -1,0 +1,90 @@
+@use "global" as *;
+
+
+.campaign__inner {
+  position: relative;
+}
+
+.campaign__slider {
+  margin-top: rem(16);
+  margin-right: calc(50% - 50vw);
+  padding: rem(5) rem(0);
+   @include mq(md){
+     margin-top: rem(32);
+
+  }
+}
+
+.campaign__slider .swiper-wrapper {
+  margin-right: calc(50% - 50vw);
+  padding: rem(5) rem(5);
+}
+
+.campaign__slider.swiper {
+  position: relative;
+}
+
+/* 前へ次への矢印カスタマイズ */
+.swiper-button-prev,
+.swiper-button-next {
+  @include mq(md){
+    position: absolute;
+    top: rem(24);
+    height: rem(80);
+    width: rem(80);
+    right: rem(26);
+  }
+}
+
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  @include mq(md){
+    left: 76.5%;
+  
+  }
+
+}
+
+/* 前へ次への矢印カスタマイズ */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
+  @include mq(md){
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    margin: auto;
+    height: rem(80);
+    width: rem(80);
+  }
+}
+/* 前への矢印カスタマイズ */
+.swiper-button-prev:after {
+  @include mq(md){
+    background-image: url(/dist/assets/images/common/swiper-prev.png);
+  }
+}
+/* 次への矢印カスタマイズ */
+.swiper-button-next:after {
+  @include mq(md){
+    background-image: url(/dist/assets/images/common/swiper-next.png);
+  }
+}
+
+/* 画像サイズ調整 */
+.swiper-slide img {
+  height: auto;
+  width: 100%;
+}
+
+
+
+
+
+.campaign__btn {
+  margin-top: rem(29);
+  text-align: center;
+  @include mq(md){
+    margin-top: rem(70);
+  }
+}

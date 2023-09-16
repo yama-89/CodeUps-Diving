@@ -1,0 +1,122 @@
+@use "global" as *;
+
+.aboutus__container {
+  margin-top: rem(54);
+  @include mq(md){
+    position: relative;
+    margin-top: rem(120);
+  }
+}
+
+.aboutus__img-box {
+  display: flex;
+}
+
+.aboutus__left-img {
+  aspect-ratio: 128/194;
+  height: 100%;
+  width: 100%;
+  max-width: calc(128 / 345) *100%;
+  margin-top: rem(-26);
+  @include mq(md){
+  margin-top: rem(-80);
+  }
+}
+
+.aboutus__left-img img {
+  aspect-ratio: 128/194;
+  object-fit: cover;
+}
+
+.aboutus__right-img {
+  z-index: -1;
+  position: relative;
+  aspect-ratio: 281/186;
+  height: 100%;
+  width: 100%;
+  margin-left: -19%;
+  max-width: calc(281 / 345) *100%;
+  @include mq(md){
+    aspect-ratio: 880/581;
+    max-width: calc(880 / 1080) *100%;
+    margin-left: rem(-200);
+  }
+
+}
+
+.aboutus__right-img img {
+  aspect-ratio: 281/186;
+  @include mq(md){
+    aspect-ratio: 880/581;
+  }
+}
+
+.aboutus__right-img::after{
+  content: "";
+  position: absolute;
+  right: calc(47% - min(35.7vw, 50rem));//要調整！！！！
+  bottom: rem(-92);
+  width: rem(194);
+  height: rem(181);
+  background-image:url(/dist/assets/images/common/pc_sango.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
+  @include mq(md){
+    display: inline-block;
+  }
+
+}
+
+.aboutus__text-container {
+  @include mq(md){
+   display: flex;
+   gap: rem(40);
+  }
+}
+
+.aboutus__text-container {
+  @include mq(md){
+    position: absolute;
+    top:41%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: rem(840);
+  }
+}
+
+.aboutus__text-title {
+  font-size: rem(40);
+  line-height: calc(40/40);
+  font-weight: $regular;
+  color: $black;
+  width: 100%;
+  margin-top: rem(40);
+  @include mq(md){
+    font-size: rem(80);
+    line-height: calc(100/80);
+    color: $base;
+    max-width: rem(400);
+    margin-top: 0;
+  }
+}
+
+.aboutus__text {
+  width: 100%;
+  color: $gray3;
+  margin-top: rem(20);
+  @include mq(md){
+    color: $base;
+    max-width: rem(400);
+    margin-top: 0;
+  }
+}
+
+.aboutus__btn {
+  text-align: center;
+  margin-top: rem(24);
+  @include mq(md){
+    margin-top: rem(40);
+  }
+}

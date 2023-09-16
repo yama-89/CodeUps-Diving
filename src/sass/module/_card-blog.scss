@@ -1,0 +1,92 @@
+@use "global" as *;
+
+.card-blog {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: rem(333);
+  margin: 0 auto;
+  background-color: $base;
+  box-shadow: rem(2) rem(2) rem(10) rgba($color:$black2, $alpha: 0.25);
+  @include mq(md){
+  }
+}
+
+.card-blog__container {
+  padding: rem(16) rem(16) rem(24) rem(16);
+
+}
+
+.card-blog__img {
+  aspect-ratio: 280/188;
+
+}
+
+.card-blog__img img {
+  aspect-ratio: 335/223;
+  object-fit: cover;
+}
+
+.card-blog__body {
+  padding-top: rem(24);
+  @include mq(md){
+    padding-top: rem(21);
+  }
+}
+
+.card-blog__date {
+  display: inline-block;
+  font-size: rem(12);
+  line-height: calc(18/12);
+  font-weight: $regular;
+
+}
+
+.card-blog__title {
+  font-size: rem(16);
+  line-height: calc(24/16);
+  @include mq(md){
+  }
+}
+
+.card-blog__text {
+  font-size: rem(16);
+  line-height: calc(24/16);
+  border-top: rem(1) solid $black;
+  padding-top: rem(16);
+
+}
+
+.card-blog__price-box {
+  display: flex;
+  text-align: center;
+  gap: rem(16);
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: rem(8);
+  @include mq(md){
+    gap: rem(24);
+  }
+}
+
+.card-campaign__price-text {
+  font-size: rem(20);
+  line-height: calc(20/20);
+  position: relative;
+}
+
+.card-campaign__price-text::after {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  width: 100%;
+  border-top: rem(3) solid $red;
+}
+
+.card-campaign__price-subtext {
+  font-size: rem(32);
+  line-height: calc(32/32);
+  color: $black;
+  font-weight: $bold;
+}

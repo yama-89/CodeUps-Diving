@@ -1,0 +1,56 @@
+@use "global" as *;
+
+.voice__title {
+  position: relative;
+}
+
+.voice__title::before{
+  display: none;
+  @include mq(md){
+    content: "";
+    position: absolute;
+    left: calc(40% - min(35.7vw, 50rem));
+    top: rem(-118);
+    width: rem(301);
+    height: rem(138);
+    background-image:url(/dist/assets/images/common/pc-voice-fish.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+  }
+
+}
+
+.voice__cards {
+  margin-top: rem(48);
+  @include mq(md){
+   margin-top: rem(32);
+  }
+}
+
+.voice__btn {
+  margin-top: rem(36);
+  text-align: center;
+  @include mq(md){
+    position: relative;
+    margin-top: rem(80);
+  }
+
+}
+
+.voice__btn::before{
+  display: none;
+  @include mq(md){
+    content: "";
+    position: absolute;
+    right: calc(48% - min(35.7vw, 50rem));
+    top: rem(-36);
+    width: rem(71);
+    height: rem(162);
+    background-image:url(/dist/assets/images/common/pc-voice-tatsu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+  }
+
+}

@@ -1,0 +1,108 @@
+@use "global" as *;
+
+.card-campaign {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: $third-font-family;
+  color: $gray3;
+  box-shadow: rem(2) rem(2) rem(10) rgba($color:$black2, $alpha: 0.25);
+  @include mq(md){
+  }
+}
+
+.card-campaign__img {
+  aspect-ratio: 280/188;
+  height: 100%;
+  width: 100%;
+
+}
+
+.card-campaign__img img {
+  aspect-ratio: 335/223;
+  object-fit: cover;
+}
+
+.card-campaign__body {
+  padding: rem(20) rem(16) rem(24) rem(16);
+  @include mq(md){
+    padding: rem(24) rem(16) rem(40) rem(16);
+  }
+}
+
+.card-campaign__tag {
+  display: inline-block;
+  font-size: rem(12);
+  line-height: calc(22/12);
+  padding: rem(4) rem(12);
+  font-weight: $regular;
+  border: rem(1) solid $black;
+  color: $black;
+  @include mq(md){
+    padding: rem(4) rem(16);
+   }
+
+}
+
+.card-campaign__title {
+  font-size: rem(16);
+  line-height: calc(24/16);
+  margin-top: rem(4);
+  margin-bottom: rem(8);
+}
+
+.card-campaign__price-title {
+  font-size: rem(14);
+  line-height: calc(24/14);
+  border-top: rem(1) solid $black;
+  text-align: center;
+  padding-top: rem(8);
+  @include mq(md){
+    padding-top: rem(16);
+    font-size: rem(16);
+    line-height: calc(24/16);
+   }
+
+}
+
+.card-campaign__price-box {
+  display: flex;
+  text-align: center;
+  gap: rem(16);
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: rem(8);
+  @include mq(md){
+    gap: rem(24);
+  }
+}
+
+.card-campaign__price-text {
+  font-size: rem(20);
+  line-height: calc(20/20);
+  position: relative;
+  @include mq(md){
+    font-size: rem(24);
+    line-height: calc(24/24);
+   }
+}
+
+.card-campaign__price-text::after {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  width: 100%;
+  border-top: rem(3) solid $red;
+}
+
+.card-campaign__price-subtext {
+  font-size: rem(32);
+  line-height: calc(32/32);
+  color: $black;
+  font-weight: $bold;
+  @include mq(md){
+   font-size: rem(40);
+  line-height: calc(40/40);
+  }
+}

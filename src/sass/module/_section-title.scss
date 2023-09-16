@@ -1,0 +1,65 @@
+@use "global" as *;
+
+.section-title {
+  font-size: rem(32);
+  line-height: calc(40/32);
+  font-weight: $normal;
+  font-family: $base-font-family;
+  text-transform: capitalize;
+  text-align: center;
+  color: $gray3;
+  @include mq(md){
+    font-size: rem(40);
+    line-height: calc(40/40);
+  }
+
+}
+
+.section-title.section-title--aboutus {
+  text-transform: none;
+}
+
+
+.section-title::first-letter {
+  color: $black;
+}
+
+.section-title span {
+  display: block;
+  font-size: rem(12);
+  line-height: calc(18/12);
+  color: $black;
+  margin-top: rem(4);
+  @include mq(md){
+    margin-top: rem(8);
+  }
+}
+
+.section-title.section-title--contact {
+  font-size: rem(80);
+  line-height: calc(1/1);
+  text-shadow: 0 rem(4) rem(4) rgba($black2,0.2);
+  @include mq(md){
+    text-shadow: none;
+  }
+}
+
+
+.section-title.section-title--white {
+  @include mq(md){
+    color: $base;
+  }
+
+}
+
+.section-title.section-title--white::first-letter {
+  @include mq(md){
+  color: $gray2;
+  }
+}
+
+.section-title.section-title--white span {
+  @include mq(md){
+    color: $base;
+  }
+}
