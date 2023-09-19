@@ -18,6 +18,7 @@
     font-size: rem(14);
     line-height: calc(22/14);
     z-index: 1;
+    border: rem(1) solid $black;
   }
 
   .button::after {

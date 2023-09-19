@@ -21,6 +21,11 @@
   font-weight: bold;
   margin-top: rem(20);
 }
+
+.nav-items__title a:hover {
+  opacity: 0.7;
+}
+
 .nav-item__title + .nav-item__title {
   margin-top: rem(20);
 }
