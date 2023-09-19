@@ -61,13 +61,13 @@
 /* 前への矢印カスタマイズ */
 .swiper-button-prev:after {
   @include mq(md){
-    background-image: url(/dist/assets/images/common/swiper-prev.png);
+    background-image: url(../images/common/swiper-prev.png);
   }
 }
 /* 次への矢印カスタマイズ */
 .swiper-button-next:after {
   @include mq(md){
-    background-image: url(/dist/assets/images/common/swiper-next.png);
+    background-image: url(../images/common/swiper-next.png);
   }
 }
 

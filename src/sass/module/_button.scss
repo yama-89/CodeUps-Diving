@@ -50,13 +50,13 @@
 
   .button span::after {
     position: absolute;
-    content: url(/dist/assets/images/common/button-w.svg);
+    content: url(../images/common/button-w.svg);
     top: 0;
     left: rem(8);
   }
 
   .button:hover span::after {
-    content: url(/dist/assets/images/common/button-g.svg);
+    content: url(../images/common/button-g.svg);
   }
 
   .button::before {

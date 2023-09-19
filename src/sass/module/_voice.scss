@@ -13,10 +13,19 @@
     top: rem(-118);
     width: rem(301);
     height: rem(138);
-    background-image:url(/dist/assets/images/common/pc-voice-fish.png);
+    background-image:url(../images/common/pc-voice-fish.png);
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
+  }
+
+}
+
+.voice__container {
+  max-width: rem(600);
+  margin-inline: auto;
+  @include mq(md){
+   max-width: initial;
   }
 
 }
@@ -47,7 +56,7 @@
     top: rem(-36);
     width: rem(71);
     height: rem(162);
-    background-image:url(/dist/assets/images/common/pc-voice-tatsu.png);
+    background-image:url(../images/common/pc-voice-tatsu.png);
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;

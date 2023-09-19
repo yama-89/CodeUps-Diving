@@ -4,7 +4,7 @@
 .blog {
   @include mq(md){
     position: relative;
-    background-image: url(/dist/assets/images/common/pc-blog.jpg);
+    background-image: url(../images/common/pc-blog.jpg);
     background-repeat: no-repeat;
     background-size: 100% calc(500 / 831) *100%;
     background-position: top;
@@ -21,10 +21,19 @@
     top: rem(24);
     width: rem(437);
     height: rem(201);
-    background-image:url(/dist/assets/images/common/pc-blog-fish.png);
+    background-image:url(../images/common/pc-blog-fish.png);
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
+  }
+
+}
+
+.blog__container {
+  max-width: rem(600);
+  margin-inline: auto;
+  @include mq(md){
+   max-width: initial;
   }
 
 }

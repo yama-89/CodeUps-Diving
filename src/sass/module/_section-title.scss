@@ -30,6 +30,7 @@
   line-height: calc(18/12);
   color: $black;
   margin-top: rem(4);
+  font-family: "Noto Sans JP";
   @include mq(md){
     margin-top: rem(8);
   }

@@ -32,7 +32,7 @@
   right: calc(35% - min(35.7vw, 50rem));
   width: rem(109);
   height: rem(50);
-  background-image:url(/dist/assets/images/common/pc-contact-fish.png);
+  background-image:url(../images/common/pc-contact-fish.png);
   background-repeat: no-repeat;
   background-size: contain;
   @include mq(md){

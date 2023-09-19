@@ -5,13 +5,15 @@
 }
 
 .infomation__container {
-  margin-top: rem(24);
+  margin: rem(24) auto rem(0);
+  max-width: rem(600);
 
   @include mq(md){
     display: flex;
     align-items: center;
     gap: rem(48);
     margin-top: rem(40);
+    max-width: initial;
 
   }
 }
