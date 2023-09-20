@@ -28,29 +28,21 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 // campaignスワイパー
   const swiper2 = new Swiper(".js-campaign-swiper", {
-    // slidesPerView: 1.28,
     spaceBetween: 24,
     loop:true,
     loopAdditionalSlides: 4,
-    loopedSlides:3,
+    loopedSlides:8,
     // maxBackfaceHiddenSlides:8,
     width:280,
-    speed:1000,
+    speed:3000,
     autoplay : {
-      delay: 0,
       disableOnInteraction: false,
     },
-    // ,
-    // pagination: {
-    //   el: ".swiper-pagination",
-    //   clickable: true,
-    // },
+    allowTouchMove: true,
 
     breakpoints: {
       768: {
         spaceBetween: 40,
-        // slidesPerView: 3.5,
-
         width: 333,
       }
     },

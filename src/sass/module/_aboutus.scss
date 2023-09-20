@@ -39,7 +39,7 @@
   @include mq(md){
     aspect-ratio: 880/581;
     max-width: calc(880 / 1080) *100%;
-    margin-left: rem(-200);
+    // margin-left: rem(-200);
   }
 
 }

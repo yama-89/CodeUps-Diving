@@ -25,7 +25,7 @@
   }
 }
 .pc-nav__item +.pc-nav__item {
-  margin-left: 2.777vw;
+  margin-left: min(2.777vw,rem(40));
 }
 
 .pc-nav__item a {

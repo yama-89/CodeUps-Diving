@@ -20,6 +20,10 @@
   padding: rem(5) rem(5);
 }
 
+.campaign__slider .swiper-wrapper .swiper-slide {
+  height: auto;
+}
+
 .campaign__slider.swiper {
   position: relative;
 }
@@ -27,7 +31,9 @@
 /* 前へ次への矢印カスタマイズ */
 .swiper-button-prev,
 .swiper-button-next {
+  display: none;
   @include mq(md){
+    display: inline-block;
     position: absolute;
     top: rem(24);
     height: rem(80);
@@ -39,7 +45,6 @@
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
   @include mq(md){
     left: 76.5%;
-  
   }
 
 }
