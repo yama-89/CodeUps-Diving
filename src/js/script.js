@@ -35,9 +35,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     // maxBackfaceHiddenSlides:8,
     width:280,
     speed:3000,
-    autoplay : {
-      disableOnInteraction: false,
-    },
+    // autoplay : {
+    //   disableOnInteraction: false,
+    // },
     allowTouchMove: true,
 
     breakpoints: {

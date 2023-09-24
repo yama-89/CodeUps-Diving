@@ -3,6 +3,7 @@
 .top-footer {
   padding: rem(56) 0 rem(56);
   @include mq(md) {
+    margin-top: rem(160);
     padding: rem(76) 0 rem(56);
   }
 }

@@ -25,7 +25,7 @@
   }
 }
 .pc-nav__item +.pc-nav__item {
-  margin-left: min(2.777vw,rem(40));
+  // margin-left: min(2.777vw,rem(40));
 }
 
 .pc-nav__item a {
@@ -35,6 +35,7 @@
   justify-content: center;
   height: inherit;
   font-weight: $regular;
+  padding: 0 min(1.388vw,rem(20));
 }
 
 .pc-nav__en {

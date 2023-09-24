@@ -22,7 +22,7 @@
     padding: 0 rem(15);
 
     @include mq("md") {
-      padding: 0 rem(40);
+      padding: 0 rem(30) 0 rem(40);
     }
   }
 
@@ -54,9 +54,4 @@
     @include mq(md) {
       display: none;
     }
-  }
-
-  .change-color {
-    background-color: rgba($color: $black2, $alpha: 1);
-    transition: 0.3s;
   }
