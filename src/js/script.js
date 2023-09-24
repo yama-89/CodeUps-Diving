@@ -36,9 +36,11 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     // maxBackfaceHiddenSlides:8,
     width:280,
     speed:3000,
+
     autoplay : {
       disableOnInteraction: false,
     },
+
     allowTouchMove: true,
 
     breakpoints: {
@@ -75,6 +77,38 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
+  $(document).ready(function () {
+    let scrollHeight, scrollPosition, footHeight;
+    $("#page-top").hide();
+    $(window).on("scroll", function () {
+      scrollHeight = $(document).height();
+      scrollPosition = $(window).height() + $(window).scrollTop();
+      footHeight = $("footer").innerHeight();
+
+      if (scrollHeight - scrollPosition <= footHeight) {
+        $("#page-top").css({
+          position: "absolute",
+          bottom: footHeight + 20,
+        });
+      } else {
+        $("#page-top").css({
+          position: "fixed",
+          bottom: "20px",
+        });
+      }
+    });
+
+    $("#page-top").click(function () {
+      $("body,html").animate(
+        {
+          scrollTop: 0,
+        },
+        400
+      );
+      return false;
+    });
+  });
+
 
 //イメージアニメーション
 // スクロールして表示領域に入ったらclass付与
@@ -108,33 +142,5 @@ box.each(function(){
           }
      });
 
-
-
-
-
-  
 });
 
-
-
-// フッター手前でストップ
-// $(document).ready(function () {
-//   $(".js-page-top").hide();
-//   $(window).on("scroll", function () {
-//     scrollHeight = $(document).height();
-//     scrollPosition = $(window).height() + $(window).scrollTop();
-//     footHeight = $("footer").innerHeight();
-//     if (scrollHeight - scrollPosition <= footHeight) {
-//       $(".js-page-top").css({
-//         position: "absolute",
-//         bottom: footHeight + 0,
-//       });
-//     } else {
-//       $(".js-page-top").css({
-//         position: "fixed",
-//         bottom: "0",
-//       });
-//     }
-//   });
-
-// });
