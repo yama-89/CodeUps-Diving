@@ -5,11 +5,17 @@
   width: 100%;
   max-width: rem(400);
   margin: 0 auto;
-  overflow: scroll;
-  height: 100vh;
+  
   @include mq(md){
   max-width: rem(1080);
+  // height: initial;
+  // overflow: initial;
   }
+}
+
+.nav__container.nav__container--scroll {
+  overflow: scroll;
+  height: 100vh;
 }
 
 .nav__logos {
