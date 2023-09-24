@@ -11,14 +11,15 @@
       padding-right: $padding-pc;
       padding-left: $padding-pc;
     }
-}
-
-.contact__container {
-  position: relative;
-  @include mq(md){
-    padding: rem(74) rem(78) rem(80) rem(50);
-    display: flex;
-    gap: rem(82);
+  }
+  
+  .contact__container {
+    position: relative;
+    @include mq(md){
+      padding: rem(74) rem(78) rem(80) rem(50);
+      display: flex;
+      align-items: center;
+      gap: rem(82);
     box-shadow: rem(4) rem(4) rem(10) rgba($color:$black2, $alpha: 0.25);
 
   }
@@ -47,6 +48,8 @@
 .contact__left {
   width: 100%;
   @include mq(md){
+    padding-right: rem(82);
+    border-right: rem(1) solid $black;
   }
 }
 
@@ -129,8 +132,8 @@
   margin-top: rem(32);
   @include mq(md){
     margin-top: 0;
-    padding: rem(28) rem(34) rem(10) rem(80);
-    border-left: rem(1) solid $black;
+    // padding: 0 rem(34) 0 rem(80);
+    // border-left: rem(1) solid $black;
   }
 }
 

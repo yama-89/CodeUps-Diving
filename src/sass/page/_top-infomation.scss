@@ -2,7 +2,7 @@
 
 .top-infomation {
   margin-top: rem(84);
-  // padding: rem(84) 0;
+  padding: rem(80) 0;
   @include mq(md) {
     margin-top: rem(172);
     padding: rem(100) 0;

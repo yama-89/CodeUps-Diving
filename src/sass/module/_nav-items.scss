@@ -4,6 +4,10 @@
   color: $base;
 }
 
+.nav-items a {
+  display: block;
+}
+
 .nav-items__title {
   position: relative;
   font-size: rem(16);
