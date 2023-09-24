@@ -9,7 +9,7 @@
   @include mq(md){
     content: "";
     position: absolute;
-    left: calc(40% - min(35.7vw, 50rem));
+    left: calc(50% - min(48.7vw, 39.9rem));
     top: rem(-118);
     width: rem(301);
     height: rem(138);
@@ -52,7 +52,7 @@
   @include mq(md){
     content: "";
     position: absolute;
-    right: calc(48% - min(35.7vw, 50rem));
+    right: calc(50% - min(48.7vw, 39.9rem));
     top: rem(-36);
     width: rem(71);
     height: rem(162);

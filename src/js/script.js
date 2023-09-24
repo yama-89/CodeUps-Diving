@@ -4,6 +4,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   $(".js-hamburger,.js-drawer-open").click(function () {
     $(".js-hamburger").toggleClass("is-active");
     $(".js-drawer-open").fadeToggle();
+    $("body").toggleClass("active");
   });
 
   //ドロワーメニュー

@@ -48,8 +48,8 @@
     height: 100vh;
     background-color: $black;
     z-index: 8888;
-    overflow: scroll;
-    overscroll-behavior: none;
+    // overflow: scroll;
+    // overscroll-behavior: none;
 
     @include mq(md) {
       display: none;

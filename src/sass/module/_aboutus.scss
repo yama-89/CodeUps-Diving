@@ -8,6 +8,23 @@
   }
 }
 
+.aboutus__container::after{
+  content: "";
+  position: absolute;
+  right: calc(50% - min(48.7vw, 39.9rem));
+  bottom: rem(-92);
+  width: rem(194);
+  height: rem(181);
+  background-image:url(../images/common/pc_sango.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
+  @include mq(md){
+    display: inline-block;
+  }
+
+}
+
 .aboutus__img-box {
   display: flex;
   justify-content: space-between;
@@ -52,22 +69,7 @@
   }
 }
 
-.aboutus__right-img::after{
-  content: "";
-  position: absolute;
-  right: calc(47% - min(35.7vw, 50rem));//要調整！！！！
-  bottom: rem(-92);
-  width: rem(194);
-  height: rem(181);
-  background-image:url(../images/common/pc_sango.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: none;
-  @include mq(md){
-    display: inline-block;
-  }
 
-}
 
 .aboutus__text-container {
   @include mq(md){

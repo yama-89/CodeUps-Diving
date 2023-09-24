@@ -5,6 +5,8 @@
   width: 100%;
   max-width: rem(400);
   margin: 0 auto;
+  overflow: scroll;
+  height: 100vh;
   @include mq(md){
   max-width: rem(1080);
   }

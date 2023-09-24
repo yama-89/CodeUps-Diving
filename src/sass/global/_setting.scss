@@ -23,6 +23,11 @@ body {
   // color: $gray3;
 }
 
+body.active {
+  height: 100%;
+  overflow: hidden;
+}
+
 // フォントウェイト
 $regular: 300;
 $normal: 400;

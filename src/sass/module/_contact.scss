@@ -37,7 +37,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   @include mq(md){
-    right: calc(35% - min(35.7vw, 50rem));
+    right: calc(50% - min(48.7vw, 39.9rem));
     width: rem(301);
     height: rem(138);
     top: rem(-32);
