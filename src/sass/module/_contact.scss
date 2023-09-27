@@ -35,7 +35,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   @include mq(md) {
-    right: calc(47% - min(48.7vw, 39.9rem));
+    right: calc(50% - min(48.7vw, 39.9rem));
     width: rem(301);
     height: rem(138);
     top: rem(-32);
@@ -52,7 +52,6 @@
 
 .contact__logo-wrap {
   border-bottom: rem(1) solid $black;
-
 }
 
 .contact__logo {
@@ -70,12 +69,10 @@
 }
 
 .contact__box {
-  // padding-top: rem(16);
   margin-top: rem(16);
   text-align: center;
   @include mq(md) {
     display: flex;
-    // padding-top: rem(22);
     margin-top: rem(22);
     text-align: left;
     gap: rem(21);
@@ -131,8 +128,6 @@
   margin-top: rem(32);
   @include mq(md) {
     margin-top: 0;
-    // padding: 0 rem(34) 0 rem(80);
-    // border-left: rem(1) solid $black;
   }
 }
 
