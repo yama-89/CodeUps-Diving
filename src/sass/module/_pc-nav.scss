@@ -52,24 +52,26 @@
   margin-top: rem(4);
 }
 
-.pc-nav__item::before {
+.pc-nav__item p {
+  position: relative;
+}
+
+.pc-nav__item p::before {
   content: "";
   position: absolute;
-  bottom: rem(20);
+  bottom: rem(-4);
   left: 0;
   transform: translateX(-50%);
   background-color: $base;
-
-
-   /*線の形状*/
-   width: 100%;
-   height: rem(1);
-   /*アニメーションの指定*/
-   transition: all .3s;
-   transform: scale(0, 1);/*X方向0、Y方向1*/
-   transform-origin: center top;/*上部中央基点*/
+  /*線の形状*/
+  width: 100%;
+  height: rem(1);
+  /*アニメーションの指定*/
+  transition: all .3s;
+  transform: scale(0, 1);/*X方向0、Y方向1*/
+  transform-origin: center top;/*上部中央基点*/
 }
 
-.pc-nav__item:hover::before {
+.pc-nav__item a:hover p::before {
   transform: scale(1, 1);/*X方向にスケール拡大*/
 }
