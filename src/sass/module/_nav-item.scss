@@ -1,15 +1,14 @@
 @use "global" as *;
 
-
 .nav-item__container {
-  @include mq(md){
+  @include mq(md) {
     display: flex;
-    }
+  }
 }
 
 .nav-item__box {
-  @include mq(md){
-  display: flex;
+  @include mq(md) {
+    display: flex;
   }
 }
 
@@ -30,7 +29,6 @@
   margin-top: rem(20);
 }
 
-
 .nav-item__title::before {
   content: "";
   display: inline-block;
@@ -39,17 +37,14 @@
   height: rem(18);
   background-size: contain;
   vertical-align: middle;
-
 }
-
-
 
 .nav-item__list {
   margin-top: rem(24);
   font-size: rem(16);
   font-weight: $normal;
-  line-height: calc(18/16);
-  @include mq(md){
+  line-height: calc(18 / 16);
+  @include mq(md) {
     padding-left: rem(0);
   }
 }

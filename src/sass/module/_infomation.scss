@@ -8,13 +8,12 @@
   margin: rem(24) auto rem(0);
   max-width: rem(600);
 
-  @include mq(md){
+  @include mq(md) {
     display: flex;
     align-items: center;
     gap: rem(48);
     margin-top: rem(40);
     max-width: initial;
-
   }
 }
 
@@ -22,8 +21,8 @@
   aspect-ratio: 345/227;
   height: 100%;
   width: 100%;
-  @include mq(md){
-    max-width: calc(540 / 1080) *100%;
+  @include mq(md) {
+    max-width: calc(540 / 1080) * 100%;
   }
 }
 
@@ -35,25 +34,25 @@
 .infomation__box {
   margin-top: rem(32);
   color: $gray3;
-  @include mq(md){
+  @include mq(md) {
     margin-top: 0;
     width: 50%;
   }
 }
 .infomation__sub-title {
   font-size: rem(20);
-  line-height: calc(24/20);
+  line-height: calc(24 / 20);
   font-weight: $bold;
   border-bottom: rem(1) solid $black;
-  @include mq(md){
+  @include mq(md) {
     font-size: rem(24);
-    line-height: calc(24/24);
+    line-height: calc(24 / 24);
     padding-bottom: rem(8);
   }
 }
 .infomation__text {
   font-size: rem(16);
-  line-height: calc(24/16);
+  line-height: calc(24 / 16);
   margin-top: rem(8);
 }
 

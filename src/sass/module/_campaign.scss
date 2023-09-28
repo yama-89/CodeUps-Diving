@@ -1,6 +1,5 @@
 @use "global" as *;
 
-
 .campaign__inner {
   position: relative;
 }
@@ -9,9 +8,8 @@
   margin-top: rem(16);
   margin-right: calc(50% - 50vw);
   padding: rem(5) rem(0);
-   @include mq(md){
-     margin-top: rem(32);
-
+  @include mq(md) {
+    margin-top: rem(32);
   }
 }
 
@@ -32,7 +30,7 @@
 .swiper-button-prev,
 .swiper-button-next {
   display: none;
-  @include mq(md){
+  @include mq(md) {
     display: inline-block;
     position: absolute;
     top: rem(24);
@@ -42,18 +40,18 @@
   }
 }
 
-.swiper-button-prev, .swiper-rtl .swiper-button-next {
-  @include mq(md){
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  @include mq(md) {
     left: 76.5%;
   }
-
 }
 
 /* 前へ次への矢印カスタマイズ */
 .swiper-button-prev:after,
 .swiper-button-next:after {
   display: none;
-  @include mq(md){
+  @include mq(md) {
     display: inline-block;
     background-repeat: no-repeat;
     background-size: contain;
@@ -65,13 +63,13 @@
 }
 /* 前への矢印カスタマイズ */
 .swiper-button-prev:after {
-  @include mq(md){
+  @include mq(md) {
     background-image: url(../images/common/swiper-prev.png);
   }
 }
 /* 次への矢印カスタマイズ */
 .swiper-button-next:after {
-  @include mq(md){
+  @include mq(md) {
     background-image: url(../images/common/swiper-next.png);
   }
 }
@@ -82,14 +80,10 @@
   width: 100%;
 }
 
-
-
-
-
 .campaign__btn {
   margin-top: rem(29);
   text-align: center;
-  @include mq(md){
+  @include mq(md) {
     margin-top: rem(70);
   }
 }

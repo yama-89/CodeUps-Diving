@@ -12,21 +12,19 @@
   height: inherit;
 }
 
-
 .mv__slider,
 .mv__slider .swiper-wrapper,
 .mv__slider .swiper-slide {
   height: inherit;
 }
 
-
 .mv__slider .swiper-slide picture,
-.mv__slider .swiper-slide img  {
+.mv__slider .swiper-slide img {
   height: inherit;
   aspect-ratio: 375 / 667;
   object-fit: cover;
-  @include mq(md){
-   aspect-ratio: 1440 / 768;
+  @include mq(md) {
+    aspect-ratio: 1440 / 768;
   }
 }
 
@@ -37,7 +35,7 @@
   font-family: $third-font-family;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 
   color: $base;
   font-weight: $normal;
@@ -50,12 +48,12 @@
 
 .mv__title {
   font-size: rem(40);
-  letter-spacing: .54em;
-  text-indent: .54em;
+  letter-spacing: 0.54em;
+  text-indent: 0.54em;
 
   @include mq("md") {
     font-size: rem(80);
-    line-height: calc(100/80);
+    line-height: calc(100 / 80);
   }
 }
 

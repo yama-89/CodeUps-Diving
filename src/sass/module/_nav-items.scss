@@ -11,10 +11,10 @@
 .nav-items__title {
   position: relative;
   font-size: rem(16);
-  line-height: calc(18/16);
+  line-height: calc(18 / 16);
   font-weight: $bold;
   padding-left: rem(24);
-  @include mq(md){
+  @include mq(md) {
   }
 }
 
@@ -33,5 +33,3 @@
 .nav-items__title:not(:first-of-type) {
   margin-top: rem(40);
 }
-
-

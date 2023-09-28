@@ -60,7 +60,6 @@
   max-width: rem(600);
   margin-inline: auto;
   @include mq(md) {
-    // position: relative;
     max-width: initial;
   }
 }
