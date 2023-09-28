@@ -4,62 +4,58 @@
   position: relative;
 }
 
-.voice__title::before{
+.voice__title::before {
   display: none;
-  @include mq(md){
+  @include mq(md) {
     content: "";
     position: absolute;
     left: calc(50% - min(48.7vw, 39.9rem));
     top: rem(-118);
     width: rem(301);
     height: rem(138);
-    background-image:url(../images/common/pc-voice-fish.png);
+    background-image: url(../images/common/pc-voice-fish.png);
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
   }
-
 }
 
 .voice__container {
   max-width: rem(600);
   margin-inline: auto;
-  @include mq(md){
-   max-width: initial;
+  @include mq(md) {
+    max-width: initial;
   }
-
 }
 
 .voice__cards {
   margin-top: rem(48);
-  @include mq(md){
-   margin-top: rem(32);
+  @include mq(md) {
+    margin-top: rem(32);
   }
 }
 
 .voice__btn {
   margin-top: rem(36);
   text-align: center;
-  @include mq(md){
+  @include mq(md) {
     position: relative;
     margin-top: rem(80);
   }
-
 }
 
-.voice__btn::before{
+.voice__btn::before {
   display: none;
-  @include mq(md){
+  @include mq(md) {
     content: "";
     position: absolute;
     right: calc(59% - min(54.7vw, 39.9rem));
     top: rem(-36);
     width: rem(71);
     height: rem(162);
-    background-image:url(../images/common/pc-voice-tatsu.png);
+    background-image: url(../images/common/pc-voice-tatsu.png);
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
   }
-
 }

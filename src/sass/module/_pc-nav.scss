@@ -20,12 +20,10 @@
   justify-content: center;
   color: $base;
   position: relative;
-  &:hover {
-    opacity: 1;
-  }
 }
-.pc-nav__item +.pc-nav__item {
-  // margin-left: min(2.777vw,rem(40));
+
+.pc-nav__item:hover {
+  opacity: 1;
 }
 
 .pc-nav__item a {
@@ -35,20 +33,18 @@
   justify-content: center;
   height: inherit;
   font-weight: $regular;
-  padding: 0 min(1.388vw,rem(20));
+  padding: 0 min(1.388vw, rem(20));
 }
 
 .pc-nav__en {
   font-size: rem(18);
-  line-height: calc(18/18);
+  line-height: calc(18 / 18);
   text-transform: capitalize;
-
-
 }
 .pc-nav__ja {
   display: block;
   font-size: rem(10);
-  line-height: calc(15/10);
+  line-height: calc(15 / 10);
   margin-top: rem(4);
 }
 
@@ -67,11 +63,11 @@
   width: 100%;
   height: rem(1);
   /*アニメーションの指定*/
-  transition: all .3s;
-  transform: scale(0, 1);/*X方向0、Y方向1*/
-  transform-origin: center top;/*上部中央基点*/
+  transition: all 0.3s;
+  transform: scale(0, 1); /*X方向0、Y方向1*/
+  transform-origin: center top; /*上部中央基点*/
 }
 
 .pc-nav__item a:hover p::before {
-  transform: scale(1, 1);/*X方向にスケール拡大*/
+  transform: scale(1, 1); /*X方向にスケール拡大*/
 }
