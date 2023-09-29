@@ -68,25 +68,3 @@
     gap: rem(24);
   }
 }
-
-.card-campaign__price-text {
-  font-size: rem(20);
-  line-height: calc(20 / 20);
-  position: relative;
-}
-
-.card-campaign__price-text::after {
-  content: "";
-  position: absolute;
-  bottom: 50%;
-  left: 0;
-  width: 100%;
-  border-top: rem(3) solid $red;
-}
-
-.card-campaign__price-subtext {
-  font-size: rem(32);
-  line-height: calc(32 / 32);
-  color: $black;
-  font-weight: $bold;
-}

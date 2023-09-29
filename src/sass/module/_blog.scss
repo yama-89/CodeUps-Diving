@@ -3,7 +3,6 @@
 .blog {
   @include mq(md) {
     position: relative;
-    // background-image: url(../images/common/pc-blog.jpg);
     background-repeat: no-repeat;
     background-size: 100% calc(500 / 831) * 100%;
     background-position: top;
