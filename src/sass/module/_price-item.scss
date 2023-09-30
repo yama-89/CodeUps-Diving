@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.price-item__text-box {
+  display: flex;
+  margin-top: rem(8);
+}
+.price-item__text,
+.price-item__price {
+  font-size: rem(14);
+  line-height: calc(24 / 14);
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: calc(24 / 16);
+  }
+}
+.price-item__price {
+  margin-left: auto;
+  padding-left: rem(20);
+}
