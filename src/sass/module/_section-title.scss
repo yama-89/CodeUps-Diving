@@ -2,6 +2,7 @@
 
 .section-title {
   text-align: center;
+  color: $black;
 }
 
 .section-title span {
@@ -21,7 +22,6 @@
 .section-title__main {
   font-size: rem(12);
   line-height: calc(18 / 12);
-  color: $black;
   margin-top: rem(4);
   font-family: "Noto Sans JP";
   font-weight: $regular;
@@ -55,6 +55,7 @@
   font-size: rem(80);
 }
 
+.section-title.section-title--white,
 .section-title.section-title--white span {
   @include mq(md) {
     color: $base;
@@ -64,11 +65,5 @@
 .section-title.section-title--white span::first-letter {
   @include mq(md) {
     color: $gray2;
-  }
-}
-
-.section-title__main.section-title__main--white {
-  @include mq(md) {
-    color: $base;
   }
 }

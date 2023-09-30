@@ -1,35 +1,35 @@
 @use "global" as *;
 
-.nav-item__container {
+.nav-subitem__container {
   @include mq(md) {
     display: flex;
   }
 }
 
-.nav-item__box {
+.nav-subitem__box {
   @include mq(md) {
     display: flex;
   }
 }
 
-.nav-item__container + .nav-item__container {
+.nav-subitem__container + .nav-subitem__container {
   margin-left: rem(16);
 }
 
-.nav-item__title {
+.nav-subitem__title {
   font-weight: bold;
   margin-top: rem(20);
 }
 
-.nav-items__title a:hover {
+.nav-subitems__title a:hover {
   opacity: 0.7;
 }
 
-.nav-item__title + .nav-item__title {
+.nav-subitem__title + .nav-subitem__title {
   margin-top: rem(20);
 }
 
-.nav-item__title::before {
+.nav-subitem__title::before {
   content: "";
   display: inline-block;
   background-image: url(../images/common/_ヒトデ.png);
@@ -39,7 +39,7 @@
   vertical-align: middle;
 }
 
-.nav-item__list {
+.nav-subitem__list {
   margin-top: rem(24);
   font-size: rem(16);
   font-weight: $normal;
