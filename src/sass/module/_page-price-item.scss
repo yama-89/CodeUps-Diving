@@ -1,0 +1,80 @@
+@use "global" as *;
+
+.page-price-item__item {
+  border-bottom: rem(1) solid $black;
+  border-right: rem(1) solid $black;
+  padding: rem(10);
+  display: flex;
+  // text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.page-price-item__item.page-price-item__item--left {
+  @include mq(md){
+    // text-align: left;
+    justify-content: flex-start;
+  }
+}
+
+.page-price-item__item.page-price-item__item--right {
+  // text-align: right;
+  justify-content: flex-end;
+  @include mq(md){
+  }
+}
+
+.page-price-item__item:nth-child(2),
+.page-price-item__item:nth-child(3) {
+  @include mq(md){
+    border-top: 1px solid $black;
+  }
+}
+.page-price-item__item:nth-child(2n){
+  border-left: 1px solid $black;
+}
+
+.page-price-item__item:nth(n+1) {
+  width: 40%;
+}
+
+.page-price-item__header {
+  border-top: 1px solid $black;
+  border-left: 1px solid $black;
+  grid-column: span 2; /* 2行に結合 */
+  grid-row: 1;   /* 1列目に配置 */
+  display: flex;
+  
+  align-items: center;
+  background-color: $black;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  @include mq(md){
+    flex-direction: column-reverse;
+    grid-row: span 3; /* 3行に結合 */
+    grid-column: 1;   /* 1列目に配置 */
+  }
+}
+
+.page-price-item__header.page-price-item__header--4row {
+  grid-row: span 4; /* 3行に結合 */
+
+}
+
+.page-price-item__header img {
+  width: rem(24);
+  height: rem(24);
+  @include mq(md){
+    width: rem(40);
+    height: rem(40);
+  
+  }
+}
+
+.page-price-item__content + page-price-item__content {
+  margin-top: rem(40);
+  @include mq(md){
+  margin-top: rem(80);
+  }
+
+}
