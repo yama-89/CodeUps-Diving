@@ -145,7 +145,7 @@ box.each(function () {
 
 
 // タブメニュー
-$(function () {
+
 const tabButton = $(".js-tab"),
 tabContent = $(".js-content");
 tabButton.on("click", function () {
@@ -158,5 +158,4 @@ tabContent.eq(index).addClass("is-active");
 });
 
 
-});
 });

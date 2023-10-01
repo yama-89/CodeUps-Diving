@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.single-blog__container {
+  @include mq(md) {
+    display: flex;
+    gap: rem(80);
+  }
+}
+
+.single-blog__main {
+  max-width: rem(600);
+  margin-inline: auto;
+  @include mq(md) {
+    width: 100%;
+    max-width: calc(707 / 1080) * 100%;
+  }
+}
+
+.single-blog__side {
+  max-width: calc(294 / 345) * 100%;
+  margin-inline: auto;
+  @include mq(md) {
+    width: 100%;
+    max-width: calc(294 / 1080) * 100%;
+  }
+}

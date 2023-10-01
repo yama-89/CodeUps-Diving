@@ -217,65 +217,225 @@
         </div>
       </section>
 
-      <div class="breadcrumb top-breadcrumb inner">
-        top > キャンペーン
-      </div>
+      <div class="breadcrumb top-breadcrumb inner">top > キャンペーン</div>
 
-      <section class="page-information">
-        <div class="page-information__inner inner">
+      <section class="single-blog">
+        <div class="single-blog__inner inner">
+          <div class="single-blog__container">
+            <div class="single-blog__main">
+              <div class="single-blog__content blog-content">
+               <time class="blog-content__date"></time>
+               <h3 class="blog-content__title"></h3>
+               <div class="blog-content__img"></div>
+               <p class="blog-content__text"></p>
+               <ol class="blog-content__lists">
+                <li class="blog-content__list"></li>
+                <li class="blog-content__list"></li>
+                <li class="blog-content__list"></li>
+               </ol>
+              </div>
+              <div class="single-blog__pagenav pagenav top-pragin">
+                <div class="wp-pagenavi">
+                  <a class="previouspostslink" rel="prev" href="#">PREV</a>
+                  <span class="current">1</span>
+                  <a class="page smaller" href="#">2</a>
+                  <a class="page smaller" href="#">3</a>
+                  <a class="page larger" href="#">4</a>
+                  <a class="nextpostslink" rel="next" href="#">NEXT</a>
+                </div>
+              </div>
+            </div>
 
-          <div class="page-information__btn-wrap">
-            <a class="page-information__btn tab-button js-tab is-active">ライセンス<br class="u-mobile">
-              講習</a>
-            <a class="page-information__btn tab-button js-tab">ファン<br class="u-mobile">
-              ダイビング</a>
-            <a class="page-information__btn tab-button js-tab">体験<br class="u-mobile">
-              ダイビング</a>
+            <aside class="single-blog__side">
+              <div class="single-blog__side-menu side-menu">
+                <div class="side-menu__content">
+                  <div class="side-menu__blog">
+                    <div class="side-menu__title archive-sub-title">
+                      <p class="archive-sub-title__title">人気記事</p>
+                    </div>
+                    <div class="side-menu__blog-cards side-menu-blog-cards">
+                      <a
+                        href="#"
+                        class="side-menu-blog-cards__card card-blog-mini"
+                      >
+                        <div class="card-blog-mini__container">
+                          <div class="card-blog-mini__img">
+                            <img
+                              src="assets/images/common/card-blog1.jpg"
+                              alt="サンゴの様子"
+                            />
+                          </div>
+                          <div class="card-blog-mini__body">
+                            <time
+                              class="card-blog-mini__date"
+                              datetime="2023-11-17"
+                              >2023.11/17</time
+                            >
+                            <div class="card-blog-mini__title">
+                              ライセンス取得
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <a
+                        href="#"
+                        class="side-menu-blog-cards__card card-blog-mini"
+                      >
+                        <div class="card-blog-mini__container">
+                          <div class="card-blog-mini__img">
+                            <img
+                              src="assets/images/common/card-blog1.jpg"
+                              alt="サンゴの様子"
+                            />
+                          </div>
+                          <div class="card-blog-mini__body">
+                            <time
+                              class="card-blog-mini__date"
+                              datetime="2023-11-17"
+                              >2023.11/17</time
+                            >
+                            <div class="card-blog-mini__title">
+                              ライセンス取得
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <a
+                        href="#"
+                        class="side-menu-blog-cards__card card-blog-mini"
+                      >
+                        <div class="card-blog-mini__container">
+                          <div class="card-blog-mini__img">
+                            <img
+                              src="assets/images/common/card-blog1.jpg"
+                              alt="サンゴの様子"
+                            />
+                          </div>
+                          <div class="card-blog-mini__body">
+                            <time
+                              class="card-blog-mini__date"
+                              datetime="2023-11-17"
+                              >2023.11/17</time
+                            >
+                            <div class="card-blog-mini__title">
+                              ライセンス取得
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="side-menu__voice">
+                    <div class="side-menu__title archive-sub-title">
+                      <p class="archive-sub-title__title">人気記事</p>
+                    </div>
+                    <div class="side-menu__voice-card card-voice-mini">
+                      <div class="card-voice-mini__container">
+                        <div class="card-voice-mini__img">
+                          <img
+                            src="assets/images/common/sp-card-voice1.jpg"
+                            alt="女性の画像"
+                          />
+                        </div>
+                        <p class="card-voice-mini__age">20代(女性)</p>
+                        <p class="card-voice-mini__title">
+                          ここにタイトルが入ります。ここにタイトル
+                        </p>
+                      </div>
+                    </div>
+                    <div class="side-menu__voice-button">
+                      <a href="#" class="button">View more<span></span></a>
+                    </div>
+                  </div>
+                  <div class="side-menu__campaign">
+                    <div class="side-menu__title archive-sub-title">
+                      <p class="archive-sub-title__title">人気記事</p>
+                    </div>
+                    <div class="side-menu__campaign-cards">
+                      <div class="side-menu__campaign-card card-campaign-mini">
+                        <div class="card-campaign-mini__img">
+                          <img
+                            src="assets/images/common/campaign1.jpg"
+                            alt="クラゲが泳いでいる様子"
+                          />
+                        </div>
+                        <div class="card-campaign-mini__body">
+                          <div class="card-campaign-mini__title-wrap">
+                            <p class="card-campaign-mini__title">
+                              ナイトダイビング
+                            </p>
+                          </div>
+                          <div class="card-campaign-mini__price-wrap">
+                            <p class="card-campaign-mini__price-title">
+                              全部コミコミ(お一人様)
+                            </p>
+                            <div class="card-campaign-mini__price-box">
+                              <p class="card-campaign-mini__price-text">
+                                ¥10,000
+                              </p>
+                              <p class="card-campaign-mini__price-subtext">
+                                ¥8,000
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="side-menu__campaign-card card-campaign-mini">
+                        <div class="card-campaign-mini__img">
+                          <img
+                            src="assets/images/common/campaign1.jpg"
+                            alt="クラゲが泳いでいる様子"
+                          />
+                        </div>
+                        <div class="card-campaign-mini__body">
+                          <div class="card-campaign-mini__title-wrap">
+                            <p class="card-campaign-mini__title">
+                              ナイトダイビング
+                            </p>
+                          </div>
+                          <div class="card-campaign-mini__price-wrap">
+                            <p class="card-campaign-mini__price-title">
+                              全部コミコミ(お一人様)
+                            </p>
+                            <div class="card-campaign-mini__price-box">
+                              <p class="card-campaign-mini__price-text">
+                                ¥10,000
+                              </p>
+                              <p class="card-campaign-mini__price-subtext">
+                                ¥8,000
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="side-menu__campaign-button">
+                      <a href="#" class="button">View more<span></span></a>
+                    </div>
+                  </div>
+
+                  <div class="side-menu__archive">
+                    <div class="side-menu__title archive-sub-title">
+                      <p class="archive-sub-title__title">人気記事</p>
+                    </div>
+                    <ul class="side-menu__archive-lists archive-lists">
+                      <li class="archive-lists__year">
+                        2023
+                        <ul class="archive-lists__list">
+                          <li class="archive-lists__month">3月</li>
+                          <li class="archive-lists__month">2月</li>
+                          <li class="archive-lists__month">1月</li>
+                        </ul>
+                      </li>
+                      <li class="archive-lists__year">2022</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </aside>
           </div>
-          <div class="page-information__container">
-            <div class="page-information__content js-content is-active">
-              <div class="page-information__content-wrap">
-                <div class="page-information__box">
-                  <h3 class="page-information__sub-title">ライセンス講習</h3>
-                  <p class="page-information__text">
-                    当店はダイビングライセンス（Cカード）世界最大の教育機関PADIの「正規店」として店舗登録されています。<br />正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。
-                  </p>
-                </div>
-                <div class="page-information__img">
-                  <img
-                    src="assets/images/common/pc-page-information1.jpg"
-                    alt="３匹のオレンジの魚が泳いでいる様子"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="page-information__content js-content">
-              <div class="page-information__content-wrap">
-                <div class="page-information__box">
-                  <h3 class="page-information__sub-title">ライセンス講習</h3>
-                  <p class="page-information__text">
-                    当店はダイビングライセンス（Cカード）世界最大の教育機関PADIの「正規店」として店舗登録されています。<br />正規登録店として、安心安全に初めての方でも安心安全にライセンス取得をサポート致します。
-                  </p>
-                </div>
-                <div class="page-information__img">
-                  <img
-                    src="assets/images/common/pc-page-information1.jpg"
-                    alt="３匹のオレンジの魚が泳いでいる様子"
-                  />
-                </div>
-              </div>
-             
-            </div>
-
-
-
-
-
         </div>
       </section>
-
-
-
 
       <section id="contact" class="contact top-contact">
         <div class="contact__inner">

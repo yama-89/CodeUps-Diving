@@ -17,9 +17,9 @@
 }
 
 .archive-lists__year::before {
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid $black;
-  border-top: 10px solid transparent;
+  border-bottom: rem(10) solid transparent;
+  border-left: rem(15) solid $black;
+  border-top: rem(10) solid transparent;
   bottom: 0;
   content: "";
   height: 0;
@@ -40,9 +40,9 @@
 }
 
 .archive-lists__month::before {
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid $black;
-  border-top: 10px solid transparent;
+  border-bottom: rem(10) solid transparent;
+  border-left: rem(15) solid $black;
+  border-top: rem(10) solid transparent;
   bottom: 0;
   content: "";
   height: 0;
