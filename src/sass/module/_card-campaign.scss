@@ -110,3 +110,40 @@
     line-height: calc(40 / 40);
   }
 }
+
+.card-campaign__text {
+  @include mq(md){
+    margin-top: rem(24);
+    font-size: rem(16);
+    line-height: calc(24/16);
+    color: $gray3;
+    font-weight: $normal;
+  }
+}
+
+.card-campaign__date,
+.card-campaign__contact {
+  @include mq(md){
+    display: block;
+    color: $black;
+    text-align: center;
+  }
+}
+.card-campaign__date {
+  @include mq(md){
+    margin-top: rem(32);
+  }
+}
+
+.card-campaign__contact {
+  @include mq(md){
+    margin-top: rem(7);
+  }
+}
+
+.card-campaign__btn {
+  @include mq(md){
+    margin-top: rem(7);
+    text-align: center;
+  }
+}

@@ -1,0 +1,64 @@
+@use "global" as *;
+
+.archive-campaign__breadcrumb {
+  margin-top: rem(8);
+}
+
+.archive-campaign__tab {
+  position: relative;
+  margin-top: rem(52);
+  @include mq(md) {
+    margin-top: rem(150);
+  }
+}
+
+.archive-campaign__tab::before {
+  background-image: url(../images/common/sp-tab-img.png);
+  content: "";
+  position: absolute;
+  left: calc(50% - min(48.7vw, 39.9rem));
+  top: rem(-40);
+  width: rem(120);
+  height: rem(55);
+  background-image: url(../images/common/pc-voice-fish.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  // z-index: -10000;
+  @include mq(md) {
+    top: rem(-80);
+    width: rem(301);
+    height: rem(138);
+  }
+}
+
+.archive-campaign__container {
+  margin: 0 auto;
+}
+
+.archive-campaign__cards {
+  margin-top: rem(40);
+  display: grid;
+  row-gap: rem(40);
+  column-gap: rem(40);
+  margin: 0 auto;
+  max-width: rem(280);
+  grid-template-columns: 1fr;
+
+  @include mq("md") {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: initial;
+  }
+}
+
+.archive-campaign__cards + .archive-campaign__cards {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(80);
+  }
+}
+
+
+.archive-campaign__pagenav {
+  margin-top: rem(80);
+}

@@ -1,0 +1,39 @@
+@use "global" as *;
+
+/*wp-pagenavi 01*/
+.wp-pagenavi {
+  // margin-top: rem(60);
+  clear: both;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.wp-pagenavi a,
+.wp-pagenavi span {
+  color: $black;
+  background-color: transparent;
+  border: rem(1) solid $black;
+  padding: rem(3) rem(7);
+  margin: 0 rem(8);
+  white-space: nowrap;
+  transition: 0.2s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+}
+.wp-pagenavi a:hover {
+  color: $black;
+  background-color: #a09d71;
+  border-color: #999;
+}
+.wp-pagenavi span.current {
+  color: $black;
+  background-color: $base;
+  border-color: $black;
+  font-weight: bold;
+}
+
+.wp-pagenavi .previouspostslink,
+.wp-pagenavi .nextpostslink {
+  padding: rem(3) rem(15);
+}
+
