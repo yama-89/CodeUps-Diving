@@ -1,0 +1,50 @@
+@use "global" as *;
+
+.card-voice-mini {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  color: $gray3;
+  @include mq(md) {
+  }
+}
+
+.card-voice-mini__container {
+  @include mq(md) {
+  }
+}
+
+.card-voice-mini__age {
+  font-size: rem(12);
+  line-height: calc(18 / 12);
+  font-weight: $regular;
+  margin-top: rem(16);
+}
+
+.card-voice-mini__title {
+  font-size: rem(24);
+  line-height: calc(24 / 16);
+  margin-top: rem(8);
+  font-weight: $bold;
+  @include mq(md) {
+    font-size: rem(24);
+  }
+}
+
+.card-voice-mini__img {
+  aspect-ratio: 294/218;
+  height: 100%;
+  width: 100%;
+  margin-top: auto;
+  @include mq(md) {
+  }
+}
+
+.card-voice-mini__img img {
+  aspect-ratio: 294/218;
+  object-fit: cover;
+  @include mq(md) {
+  }
+}
+

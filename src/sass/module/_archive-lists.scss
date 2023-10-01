@@ -1,0 +1,54 @@
+@use "global" as *;
+
+.archive-lists {
+
+
+}
+
+.archive-campaign__inner {
+
+}
+
+
+.archive-lists__year {
+  position: relative;
+  color: $black;
+  padding-left: rem(20);
+}
+
+.archive-lists__year::before {
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid $black;
+  border-top: 10px solid transparent;
+  bottom: 0;
+  content: "";
+  height: 0;
+  // margin: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0; /* IE崩れ防止 */
+}
+
+.archive-lists__month {
+  position: relative;
+  padding-left: rem(20);
+}
+
+.archive-lists__month + .archive-lists__month {
+  margin-top: rem(4);
+}
+
+.archive-lists__month::before {
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid $black;
+  border-top: 10px solid transparent;
+  bottom: 0;
+  content: "";
+  height: 0;
+  // margin: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0; /* IE崩れ防止 */
+}

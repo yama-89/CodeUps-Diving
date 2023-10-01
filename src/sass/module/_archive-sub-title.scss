@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.archive-sub-title {
+  position: relative;
+  border-left: rem(4) solid $black;
+  padding: rem(7) rem(75);
+}
+
+.archive-sub-title::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: rem(30);
+  transform: translate(-50%, -50%);
+  height: rem(50);
+  width: rem(50);
+  background-image: url(/assets/images/common/archive-sub-title-img.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
+
+.archive-sub-title__title {
+  font-size: rem(24);
+  color: $black;
+}
