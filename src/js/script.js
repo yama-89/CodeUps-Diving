@@ -1,6 +1,6 @@
-
-jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
-      // ハンバーガーメニュー
+jQuery(function ($) {
+  // この中であればWordpressでも「$」が使用可能になる
+  // ハンバーガーメニュー
   $(".js-hamburger,.js-drawer-open").click(function () {
     $(".js-hamburger").toggleClass("is-active");
     $(".js-drawer-open").fadeToggle();
@@ -27,17 +27,17 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     },
   });
 
-// campaignスワイパー
+  // campaignスワイパー
   const swiper2 = new Swiper(".js-campaign-swiper", {
     spaceBetween: 24,
-    loop:true,
+    loop: true,
     loopAdditionalSlides: 4,
-    loopedSlides:8,
+    loopedSlides: 8,
     // maxBackfaceHiddenSlides:8,
-    width:280,
-    speed:3000,
+    width: 280,
+    speed: 3000,
 
-    autoplay : {
+    autoplay: {
       disableOnInteraction: false,
     },
 
@@ -47,7 +47,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       768: {
         spaceBetween: 40,
         width: 333,
-      }
+      },
     },
 
     navigation: {
@@ -56,12 +56,12 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     },
   });
 
-
-// ページトップ
+  // ページトップ
   const pageTop = $(".js-page-top");
   pageTop.hide();
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) { // 100pxスクロールしたら発火
+    if ($(this).scrollTop() > 100) {
+      // 100pxスクロールしたら発火
       pageTop.fadeIn(); // 100px以上スクロールしたらボタンをフェードイン
     } else {
       pageTop.fadeOut(); // 100px以下になったらボタンをフェードアウト
@@ -109,38 +109,54 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
   });
 
-
-//イメージアニメーション
-// スクロールして表示領域に入ったらclass付与
+  //イメージアニメーション
+  // スクロールして表示領域に入ったらclass付与
   $(".js-fadeUp").on("inview", function () {
     $(this).addClass("is-inview");
   });
 });
 
 //要素の取得とスピードの設定
-var box = $('.js-colorbox'),
-    speed = 700;
+var box = $(".js-colorbox"),
+  speed = 700;
 
 //.js-colorboxの付いた全ての要素に対して下記の処理を行う
-box.each(function(){
-    $(this).append('<div class="color"></div>')
-    var color = $(this).find($('.color')),
-    image = $(this).find('img');
-    var counter = 0;
+box.each(function () {
+  $(this).append('<div class="color"></div>');
+  var color = $(this).find($(".color")),
+    image = $(this).find("img");
+  var counter = 0;
 
-    image.css('opacity','0');
-    color.css('width','0%');
-    //inviewを使って背景色が画面に現れたら処理をする
-    color.on('inview', function(){
-        if(counter == 0){
-        $(this).delay(200).animate({'width':'100%'},speed,function(){
-                   image.css('opacity','1');
-                   $(this).css({'left':'0' , 'right':'auto'});
-                   $(this).animate({'width':'0%'},speed);
-                })
-            counter = 1;
-          }
-     });
+  image.css("opacity", "0");
+  color.css("width", "0%");
+  //inviewを使って背景色が画面に現れたら処理をする
+  color.on("inview", function () {
+    if (counter == 0) {
+      $(this)
+        .delay(200)
+        .animate({ width: "100%" }, speed, function () {
+          image.css("opacity", "1");
+          $(this).css({ left: "0", right: "auto" });
+          $(this).animate({ width: "0%" }, speed);
+        });
+      counter = 1;
+    }
+  });
 
+
+// タブメニュー
+$(function () {
+const tabButton = $(".js-tab"),
+tabContent = $(".js-content");
+tabButton.on("click", function () {
+let index = tabButton.index(this);
+
+tabButton.removeClass("is-active");
+$(this).addClass("is-active");
+tabContent.removeClass("is-active");
+tabContent.eq(index).addClass("is-active");
 });
 
+
+});
+});

@@ -1,0 +1,60 @@
+@use "global" as *;
+
+
+.tab-button {
+    background: $gray2;
+    color: $black;
+    display: inline-block;
+    position: relative;
+    font-weight: $regular;
+    width: 100%;
+    padding: rem(10) rem(16);
+    cursor: pointer;
+    text-align: center;
+    // max-width: rem(202);
+    font-size: rem(14);
+    // line-height: calc(22/14);
+    // z-index: 1;
+
+    @include mq(md){
+    padding: rem(26) rem(30);
+    font-size: rem(24);
+    text-align: right;
+
+  
+    }
+  }
+
+  .tab-button::before {
+    @include mq(md){
+      display: inline-block;
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 20%;
+      transform: translate(-50%,-50%);
+      height: rem(64);
+      width: rem(64);
+      // background-image: url(/dist/assets/images/common/tab-img.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .tab-button:nth-child(1)::before {
+    background-image: url(../images/common/pc-tab-button1.svg);
+  }
+
+  .tab-button:nth-child(2)::before {
+    background-image: url(../images/common/pc-tab-button2.svg);
+  }
+
+  .tab-button:nth-child(3)::before {
+    background-image: url(../images/common/pc-tab-button3.svg);
+  }
+
+
+  .tab-button.is-active {
+    color: $base;
+    background-color: $black;
+  }
