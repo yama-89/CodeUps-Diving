@@ -114,7 +114,9 @@ jQuery(function ($) {
   $(".js-fadeUp").on("inview", function () {
     $(this).addClass("is-inview");
   });
-});
+
+
+
 
 //要素の取得とスピードの設定
 var box = $(".js-colorbox"),
@@ -144,18 +146,21 @@ box.each(function () {
   });
 
 
-// タブメニュー
+});
 
+
+// タブメニュー
 const tabButton = $(".js-tab"),
 tabContent = $(".js-content");
 tabButton.on("click", function () {
 let index = tabButton.index(this);
-
+// console.log(index);
 tabButton.removeClass("is-active");
 $(this).addClass("is-active");
 tabContent.removeClass("is-active");
 tabContent.eq(index).addClass("is-active");
 });
+
 
 
 });

@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.page-price__content {
+  margin-top: rem(100);
+  grid-gap: 0;
+  display: grid;
+  grid-template-columns:repeat(2, auto);
+  grid-template-rows:repeat(3, auto);
+  @include mq(md){
+    grid-template-columns: calc((200 / 700) * 100%) calc((340 / 700) * 100%) calc((162 / 700) * 100%);
+    grid-template-rows: repeat(3, auto);
+  }
+}
