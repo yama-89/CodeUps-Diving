@@ -1,7 +1,19 @@
 @use "global" as *;
 
+.page-price__container {
+  display: grid;
+  row-gap: rem(40);
+  @include mq(md){
+    row-gap: rem(100);
+
+  }
+}
+
 .page-price__content {
-  margin-top: rem(100);
+  // margin-top: rem(100);
+  width: 100%;
+  max-width: rem(700);
+  margin-inline: auto;
   grid-gap: 0;
   display: grid;
   grid-template-columns:repeat(2, auto);
