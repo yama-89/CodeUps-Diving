@@ -1,0 +1,53 @@
+@use "global" as *;
+
+
+.page-thanks {
+  position: relative;
+}
+
+.page-thanks::before {
+  background-image: url(../images/common/sp-tab-img.png);
+  content: "";
+  position: absolute;
+  left: calc(50% - min(48.7vw, 39.9rem));
+  top: rem(-40);
+  width: rem(120);
+  height: rem(55);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  // z-index: -10000;
+  @include mq(md) {
+    top: rem(-80);
+    width: rem(301);
+    height: rem(138);
+  }
+}
+
+
+
+.page-thanks__inner {
+  max-width: rem(622);
+  margin-top: rem(8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.page-thanks__container {
+  color: $gray3;
+  font-family: "Noto Sans JP" ;
+
+
+}
+
+.page-thanks__title {
+  font-size: rem(16);
+  line-height: calc(18/16);
+}
+
+.page-thanks__text {
+  font-size: rem(16);
+  margin-top: rem(40);
+}
