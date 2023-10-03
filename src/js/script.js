@@ -161,6 +161,26 @@ tabContent.removeClass("is-active");
 tabContent.eq(index).addClass("is-active");
 });
 
+// アコーディオン
+$(".faq-item:first-of-type .js-faq-item__content").css("display", "block");
+  $(".faq-item:first-of-type .js-faq-item__title").addClass("open");
+  $(".js-faq-item__title").on("click", function () {
+    $(this).next().slideToggle(200);
+    $(this).toggleClass("open", 200);
+    /*クリックしたjs-accordion-title以外のopenクラスを削除*/
+    $(".js-faq-item__title").not(this).removeClass("open");
+    /*クリックしたjs-accordion-title以外の要素を閉じる*/
+    $(".js-faq-item__title").not(this).next().slideUp(200);
+    $(".js-faq-item__content").on("click", function () {
+        // クリックしたコンテンツを閉じる
+        $(this).slideUp(200);
+        // 閉じた場合、対応するタイトルのクラスも削除する
+    $(".js-faq-item__title").removeClass("open");
+   });
+  });
+
+
+
 
 
 });
