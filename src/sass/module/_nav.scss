@@ -53,6 +53,7 @@
 }
 
 .nav__lists {
+  color: $base;
   display: flex;
   gap: rem(16);
   margin-top: rem(40);
@@ -63,6 +64,10 @@
 }
 .nav__lists.nav__lists--sp-drawer {
   margin-top: rem(24);
+}
+
+.nav__lists.nav__lists--sitemap {
+  color: $gray3;
 }
 
 .nav__left,

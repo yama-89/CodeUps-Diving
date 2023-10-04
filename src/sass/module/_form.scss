@@ -1,0 +1,60 @@
+@use "global" as *;
+
+.form {
+  color: $gray3;
+}
+
+.form dl {
+  padding-bottom: rem(24);
+  border-bottom: rem(1) dotted $black;
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+	padding-bottom: rem(40);
+  }
+}
+
+.form dl:not(:first-child) {
+	margin-top: rem(24);
+	@include mq(md) {
+		margin-top: rem(40);
+	  }
+
+
+}
+
+.form dt {
+  font-size: rem(16);
+  font-weight: $bold;
+}
+
+.form dt span {
+  display: inline-block;
+  background-color: $red;
+  color: $base;
+  font-size: rem(12);
+  letter-spacing: 0.4em;
+  font-weight: $regular;
+  padding: rem(2) rem(16);
+  margin-left: rem(8);
+}
+
+.form dd {
+  width: 100%;
+  max-width: rem(480);
+}
+
+.form p {
+  margin-top: rem(40);
+  text-align: center;
+  @include mq(md){
+  margin-top: rem(80);
+  }
+}
+.form button {
+	margin-top: rem(40);
+	text-align: center;
+	@include mq(md){
+	margin-top: rem(80);
+	}
+  }

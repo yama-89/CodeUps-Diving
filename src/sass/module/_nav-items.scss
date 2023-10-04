@@ -1,8 +1,12 @@
 @use "global" as *;
 
-.nav-items {
-  color: $base;
-}
+// .nav-items {
+//   color: $base;
+// }
+
+// .nav-items.nav-items--sitemap {
+//   color: $black;
+// }
 
 .nav-items a {
   display: block;
@@ -28,6 +32,12 @@
   background-size: contain;
   vertical-align: middle;
   left: 0;
+}
+
+.nav-items__title.nav-items__title--sitemap::before {
+  
+  background-image: url(../images/common/nav-icon-black.png);
+
 }
 
 .nav-items__title:not(:first-of-type) {

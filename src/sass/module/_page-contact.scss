@@ -1,11 +1,11 @@
 @use "global" as *;
 
 
-.page-thanks {
+.page-contact {
   position: relative;
 }
 
-.page-thanks::before {
+.page-contact::before {
   background-image: url(../images/common/sp-tab-img.png);
   content: "";
   position: absolute;
@@ -24,18 +24,23 @@
   }
 }
 
-.page-thanks__inner {
-  max-width: rem(622);
-  margin-top: rem(8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+.page-contact__inner {
+  // max-width: rem(700);
+  // width: 100%;
+  // margin-inline: auto;
+  // margin-top: rem(8);
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // text-align: center;
 }
 
-.page-thanks__container {
+.page-contact__container {
   color: $gray3;
-  font-family: "Noto Sans JP" ;
+  font-family: "Noto Sans JP";
+  max-width: rem(700);
+  width: 100%;
+  margin-inline: auto;
 }
 
 .page-thanks__title {

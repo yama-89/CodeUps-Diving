@@ -1,11 +1,11 @@
 @use "global" as *;
 
 
-.page-thanks {
+.page-privacypolicy {
   position: relative;
 }
 
-.page-thanks::before {
+.page-privacypolicy::before {
   background-image: url(../images/common/sp-tab-img.png);
   content: "";
   position: absolute;
@@ -24,13 +24,15 @@
   }
 }
 
-.page-thanks__inner {
-  max-width: rem(622);
+.page-privacypolicy__inner {
+  max-width: rem(800);
   margin-top: rem(8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // text-align: center;
+  color: $gray3;
+  font-family: "Noto Sans JP" ;
 }
 
 .page-thanks__container {
@@ -38,12 +40,22 @@
   font-family: "Noto Sans JP" ;
 }
 
-.page-thanks__title {
+.page-privacypolicy__title {
   font-size: rem(16);
   line-height: calc(18/16);
+}
+
+.page-privacypolicy__content {
+  margin-top: rem(40);
+
 }
 
 .page-thanks__text {
   font-size: rem(16);
   margin-top: rem(40);
+}
+
+.page-privacypolicy ol{
+  list-style: auto;
+
 }
