@@ -179,6 +179,33 @@ $(".faq-item:first-of-type .js-faq-item__content").css("display", "block");
    });
   });
 
+  // 画像要素とモーダルを取得
+var images = document.querySelectorAll('.gallery__img img');
+var modal = document.getElementById('myModal');
+var modalImg = document.getElementById('modalImg');
+var closeBtn = document.querySelector('.close');
+
+// 画像をクリックしたときの処理
+images.forEach(function(image) {
+  image.addEventListener('click', function() {
+    modal.style.display = 'block'; // モーダル表示
+    modalImg.src = this.src; // クリックした画像をモーダルに表示
+  });
+});
+
+// モーダルを閉じる処理
+closeBtn.addEventListener('click', function() {
+  modal.style.display = 'none'; // モーダル非表示
+});
+
+// モーダル外をクリックしても閉じる処理
+window.addEventListener('click', function(event) {
+  if (event.target == modal) {
+    modal.style.display = 'none'; // モーダル非表示
+  }
+});
+
+
 
 
 
