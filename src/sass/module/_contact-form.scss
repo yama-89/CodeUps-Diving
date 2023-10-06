@@ -109,6 +109,7 @@ button,
 }
 
 
+
 [type="radio"] {
   display: none;
 
@@ -210,6 +211,10 @@ button,
   }
 }
 
+[type="checkbox"] + span:not(:first-child){
+   margin-top: rem(4);
+}
+
 select {
   /*↓リセットCSS */
   border-radius: 0;
@@ -225,11 +230,11 @@ select {
   background-color: $back-cr;
   border: rem(1) solid $border-cr-default;
   /*↓デフォルトのアイコンを消す場合はコメントアウト（noneにする）*/
-  appearance: auto;
+  // appearance: auto;
   /*↓デフォルトではないアイコンを使う場合は入力する*/
-  // background-image: url();
-  // background-position: right 12px center;
-  // background-repeat: no-repeat;
+  background-image: url(../images/common/select-btn.svg);
+  background-position: right 12px center;
+  background-repeat: no-repeat;
   &:focus {
     border: rem(1) solid $border-cr;
   }
