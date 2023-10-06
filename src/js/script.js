@@ -179,35 +179,26 @@ $(".faq-item:first-of-type .js-faq-item__content").css("display", "block");
    });
   });
 
-  // 画像要素とモーダルを取得
-var images = document.querySelectorAll('.gallery__img img');
-var modal = document.getElementById('myModal');
-var modalImg = document.getElementById('modalImg');
-var closeBtn = document.querySelector('.close');
 
-// 画像をクリックしたときの処理
-images.forEach(function(image) {
-  image.addEventListener('click', function() {
-    modal.style.display = 'block'; // モーダル表示
-    modalImg.src = this.src; // クリックした画像をモーダルに表示
+  // ==========================================================================
+  // コース一覧の拡大画像モーダル処理
+  // ==========================================================================
+
+  // コース画像モーダル表示イベント
+  $(".gallery__img img").click(function () {
+    // まず、クリックした画像の HTML(<img>タグ全体)を#frayDisplay内にコピー
+    $("#grayDisplay").html($(this).prop("outerHTML"));
+    //そして、fadeInで表示する。
+    $("#grayDisplay").fadeIn(200);
+    return false;
   });
-});
 
-// モーダルを閉じる処理
-closeBtn.addEventListener('click', function() {
-  modal.style.display = 'none'; // モーダル非表示
-});
-
-// モーダル外をクリックしても閉じる処理
-window.addEventListener('click', function(event) {
-  if (event.target == modal) {
-    modal.style.display = 'none'; // モーダル非表示
-  }
-});
-
-
-
-
-
+  // コース画像モーダル非表示イベント
+  // モーダル画像背景 または 拡大画像そのものをクリックで発火
+  $("#grayDisplay").click(function () {
+    // 非表示にする
+    $("#grayDisplay").fadeOut(200);
+    return false;
+  });
 
 });
