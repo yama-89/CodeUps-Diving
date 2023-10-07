@@ -25,6 +25,7 @@
   font-weight: $regular;
   @include mq("md") {
     font-size: rem(80);
+    top: 60%;
   }
 }
 

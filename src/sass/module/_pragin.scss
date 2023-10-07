@@ -11,9 +11,10 @@
 .wp-pagenavi a,
 .wp-pagenavi span {
   color: $black;
+  font-family: $third-font-family;
   background-color: transparent;
   border: rem(1) solid $black;
-  padding: rem(3) rem(7);
+  padding: rem(6) rem(10);
   margin: 0 rem(8);
   white-space: nowrap;
   transition: 0.2s ease-in-out;

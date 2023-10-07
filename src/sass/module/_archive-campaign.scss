@@ -2,9 +2,7 @@
 
 .archive-campaign__tab {
   position: relative;
-  margin-top: rem(52);
   @include mq(md) {
-    margin-top: rem(150);
   }
 }
 
@@ -13,14 +11,14 @@
   content: "";
   position: absolute;
   left: calc(50% - min(48.7vw, 39.9rem));
-  top: rem(-40);
+  top: rem(-22);
   width: rem(120);
   height: rem(55);
   background-image: url(../images/common/pc-voice-fish.png);
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
-  // z-index: -10000;
+  z-index: -1;
   @include mq(md) {
     top: rem(-80);
     width: rem(301);
@@ -40,8 +38,8 @@
   margin: 0 auto;
   max-width: rem(280);
   grid-template-columns: 1fr;
-
   @include mq("md") {
+    row-gap: rem(80);
     grid-template-columns: repeat(2, 1fr);
     max-width: initial;
   }
