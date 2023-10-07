@@ -1,12 +1,13 @@
 @use "global" as *;
 
 .archive-blog-cards {
-    display: grid;
-    gap: rem(40);
+    // display: grid;
+    // column-gap: rem(40);
+    // row-gap: rem(80);
 
-    @include mq(md){
-        grid-template-columns: repeat(2,1fr);
-    }
+    // @include mq(md){
+    //     grid-template-columns: repeat(2,1fr);
+    // }
 
 
 }

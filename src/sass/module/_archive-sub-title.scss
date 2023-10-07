@@ -3,7 +3,7 @@
 .archive-sub-title {
   position: relative;
   border-left: rem(8) solid $black;
-  padding: rem(7) rem(75);
+  padding: rem(7) rem(35) rem(7) rem(75);
 }
 
 .archive-sub-title::before {
@@ -11,7 +11,7 @@
   position: absolute;
   content: "";
   top: 50%;
-  left: rem(30);
+  left: rem(40);
   transform: translate(-50%, -50%);
   height: rem(50);
   width: rem(50);
@@ -23,5 +23,5 @@
 
 .archive-sub-title__title {
   font-size: rem(24);
-  color: $black;
+  color: $gray3;
 }
