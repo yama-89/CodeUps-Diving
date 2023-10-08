@@ -23,6 +23,7 @@
   transform: translate(-50%, -50%);
   color: $base;
   font-weight: $regular;
+  text-wrap: nowrap;
   @include mq("md") {
     font-size: rem(80);
     top: 60%;

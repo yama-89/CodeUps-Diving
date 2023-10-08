@@ -168,9 +168,9 @@ $(".faq-item:first-of-type .js-faq-item__content").css("display", "block");
     $(this).next().slideToggle(200);
     $(this).toggleClass("open", 200);
     /*クリックしたjs-accordion-title以外のopenクラスを削除*/
-    $(".js-faq-item__title").not(this).removeClass("open");
+    // $(".js-faq-item__title").not(this).removeClass("open");
     /*クリックしたjs-accordion-title以外の要素を閉じる*/
-    $(".js-faq-item__title").not(this).next().slideUp(200);
+    // $(".js-faq-item__title").not(this).next().slideUp(200);
     $(".js-faq-item__content").on("click", function () {
         // クリックしたコンテンツを閉じる
         $(this).slideUp(200);
