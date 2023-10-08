@@ -14,18 +14,21 @@
   font-size: rem(16);
   line-height: calc(24/16);
   @include mq(md){
-    padding: rem(18);
+    padding: rem(16);
   }
 }
 .page-price-item__item.page-price-item__item--left {
+  min-width: rem(240);
   @include mq(md){
     // text-align: left;
     justify-content: flex-start;
+    
   }
 }
 
 .page-price-item__item.page-price-item__item--right {
   // text-align: right;
+  min-width: rem(106);
   justify-content: flex-end;
   @include mq(md){
   }
@@ -51,8 +54,8 @@
 }
 
 .page-price-item__header {
-  border-top: 1px solid $black;
-  border-left: 1px solid $black;
+  border-top: rem(1) solid $black;
+  border-left: rem(1) solid $black;
   grid-column: span 2; /* 2行に結合 */
   grid-row: 1;   /* 1列目に配置 */
   display: flex;
@@ -61,6 +64,7 @@
   color: $base;
   text-align: center;
   justify-content: center;
+  min-height: initial;
   @include mq(md){
     flex-direction: column-reverse;
     grid-row: span 3; /* 3行に結合 */

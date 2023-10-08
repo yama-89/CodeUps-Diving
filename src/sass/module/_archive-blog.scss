@@ -2,6 +2,7 @@
 
 .archive-blog__container {
   position: relative;
+  // padding: 0 rem(5);
   @include mq(md) {
     display: flex;
     gap: rem(80);
@@ -39,12 +40,14 @@
 
 .archive-blog__cards {
   display: grid;
-    column-gap: rem(40);
+  column-gap: rem(40);
+  row-gap: rem(40);
+  padding: 0 rem(5);
+  @include mq(md) {
+    padding: 0;
     row-gap: rem(80);
-
-    @include mq(md){
-        grid-template-columns: repeat(2,1fr);
-    }
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .archive-blog__side {

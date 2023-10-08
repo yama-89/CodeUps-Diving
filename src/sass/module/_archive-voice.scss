@@ -40,8 +40,8 @@
   margin: 0 auto;
   max-width: rem(600);
   grid-template-columns: 1fr;
-
   @include mq("md") {
+    row-gap: rem(80);
     grid-template-columns: repeat(1, 1fr);
     max-width: initial;
   }

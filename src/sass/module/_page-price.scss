@@ -17,20 +17,18 @@
   display: inline-block;
   // z-index: -10000;
   @include mq(md) {
-    top: rem(-120);
+    top: rem(-72);
     width: rem(301);
     height: rem(138);
   }
 }
 
 
-
-
 .page-price__container {
   display: grid;
   row-gap: rem(40);
   @include mq(md){
-    row-gap: rem(100);
+    row-gap: rem(80);
 
   }
 }

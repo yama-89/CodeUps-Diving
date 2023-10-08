@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .archive-lists {
+  font-size: rem(24);
 
 
 }
@@ -13,7 +14,7 @@
 .archive-lists__year {
   position: relative;
   color: $black;
-  padding-left: rem(20);
+  padding-left: rem(32);
 }
 
 .archive-lists__year::before {
@@ -25,8 +26,8 @@
   height: 0;
   // margin: auto;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: rem(10);
+  top: rem(5);
   width: 0; /* IE崩れ防止 */
 }
 
@@ -48,7 +49,7 @@
   height: 0;
   // margin: auto;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: rem(0);
+  top: rem(5);
   width: 0; /* IE崩れ防止 */
 }
