@@ -2,7 +2,6 @@
 
 /*wp-pagenavi 01*/
 .wp-pagenavi {
-  // margin-top: rem(60);
   clear: both;
   text-align: center;
   display: flex;
@@ -35,7 +34,7 @@
 
 .wp-pagenavi .previouspostslink,
 .wp-pagenavi .nextpostslink {
-  padding: rem(3) rem(15);
+  // padding: rem(3) rem(15);
   margin: 0 rem(40);
 }
 

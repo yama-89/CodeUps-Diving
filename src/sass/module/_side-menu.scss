@@ -2,8 +2,8 @@
 
 .side-menu__blog {
   margin-top: rem(80);
-  @include mq(md){
-  margin-top: 0;
+  @include mq(md) {
+    margin-top: 0;
   }
 }
 
@@ -22,7 +22,6 @@
 .side-menu__content {
 }
 
-
 .side-menu__voice,
 .side-menu__campaign,
 .side-menu__archive {
@@ -33,7 +32,6 @@
   margin-top: rem(24);
 }
 
-
 .side-menu__campaign-cards {
   margin-top: rem(24);
   display: grid;
@@ -41,11 +39,8 @@
   grid-template-columns: repeat(1, auto);
   grid-template-rows: repeat(2, auto);
   @include mq(md) {
-    // grid-template-columns: repeat(1, auto);
-    // grid-template-rows: repeat(2, auto);
   }
 }
-
 
 .side-menu__archive-lists {
   margin-top: rem(24);

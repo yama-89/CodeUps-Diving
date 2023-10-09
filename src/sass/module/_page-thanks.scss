@@ -16,7 +16,6 @@
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
-  // z-index: -10000;
   @include mq(md) {
     top: rem(-80);
     width: rem(301);

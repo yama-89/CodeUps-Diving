@@ -56,14 +56,6 @@
   }
 }
 
-// .blog__container {
-//   max-width: rem(600);
-//   margin-inline: auto;
-//   @include mq(md) {
-//     max-width: initial;
-//   }
-// }
-
 .blog__cards {
   margin-top: rem(24);
   @include mq(md) {

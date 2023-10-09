@@ -2,9 +2,7 @@
 
 .top-archive-blog {
   margin-top: rem(52);
-  // padding: rem(80) 0;
   @include mq(md) {
     margin-top: rem(150);
-    // padding: rem(100) 0;
   }
 }

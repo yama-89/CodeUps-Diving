@@ -12,44 +12,41 @@
   justify-content: center;
   align-items: center;
   font-size: rem(16);
-  line-height: calc(24/16);
-  @include mq(md){
+  line-height: calc(24 / 16);
+  @include mq(md) {
     padding: rem(16);
   }
 }
 .page-price-item__item.page-price-item__item--left {
   min-width: rem(240);
-  @include mq(md){
-    // text-align: left;
+  @include mq(md) {
     justify-content: flex-start;
-    
   }
 }
 
 .page-price-item__item.page-price-item__item--right {
-  // text-align: right;
   min-width: rem(106);
   justify-content: flex-end;
-  @include mq(md){
+  @include mq(md) {
   }
 }
 
 .page-price-item__title {
   font-size: rem(16);
-  line-height: calc(24/16);
+  line-height: calc(24 / 16);
 }
 
 .page-price-item__item:nth-child(2),
 .page-price-item__item:nth-child(3) {
-  @include mq(md){
+  @include mq(md) {
     border-top: 1px solid $black;
   }
 }
-.page-price-item__item:nth-child(2n){
+.page-price-item__item:nth-child(2n) {
   border-left: 1px solid $black;
 }
 
-.page-price-item__item:nth(n+1) {
+.page-price-item__item:nth(n + 1) {
   width: 40%;
 }
 
@@ -57,7 +54,7 @@
   border-top: rem(1) solid $black;
   border-left: rem(1) solid $black;
   grid-column: span 2; /* 2行に結合 */
-  grid-row: 1;   /* 1列目に配置 */
+  grid-row: 1; /* 1列目に配置 */
   display: flex;
   align-items: center;
   background-color: $black;
@@ -65,22 +62,21 @@
   text-align: center;
   justify-content: center;
   min-height: initial;
-  @include mq(md){
+  @include mq(md) {
     flex-direction: column-reverse;
     grid-row: span 3; /* 3行に結合 */
-    grid-column: 1;   /* 1列目に配置 */
+    grid-column: 1; /* 1列目に配置 */
   }
 }
 
 .page-price-item__header.page-price-item__header--4row {
   grid-row: span 4; /* 3行に結合 */
-
 }
 
 .page-price-item__header img {
   width: rem(24);
   height: rem(24);
-  @include mq(md){
+  @include mq(md) {
     width: rem(64);
     height: rem(64);
   }
@@ -88,63 +84,7 @@
 
 .page-price-item__content + page-price-item__content {
   margin-top: rem(40);
-  @include mq(md){
-  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(80);
   }
-
 }
-
-// .page-price__content {
-//   margin-top: rem(100);
-//   grid-gap: 0;
-//   display: grid;
-//   grid-template-columns:repeat(2, auto);
-//   grid-template-rows:repeat(3, auto);
-//   @include mq(md){
-//     grid-template-columns: calc((200 / 700) * 100%) calc((340 / 700) * 100%) calc((162 / 700) * 100%);
-//     grid-template-rows: repeat(3, auto);
-//   }
-// }
-
-// .page-price-item__item {
-//   border-bottom: rem(1) solid #000;
-//   border-right: rem(1) solid #000;
-//   padding: 10px;
-//   text-align: center;
-// }
-
-// .price-item__item:nth-child(2),
-// .price-item__item:nth-child(3) {
-//   @include mq(md){
-//     border-top: 1px solid #000;
-//   }
-// }
-// .price-item__item:nth-child(2n){
-//   border-left: 1px solid #000;
-// }
-
-// .price-item__item:nth(n+1) {
-//   width: 40%;
-// }
-
-// .header2 {
-//   border-top: 1px solid #000;
-//   border-left: 1px solid #000;
-//   grid-column: span 2; /* 2行に結合 */
-//   grid-row: 1;   /* 1列目に配置 */
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   background-color: #000;
-//   color: white;
-//   text-align: center;
-//   justify-content: center;
-//   @include mq(md){
-//     grid-row: span 3; /* 3行に結合 */
-//     grid-column: 1;   /* 1列目に配置 */
-//   }
-// }
-// .header2 img {
-//   width: rem(40);
-//   height: rem(40);
-// }

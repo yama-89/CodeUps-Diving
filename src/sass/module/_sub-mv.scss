@@ -3,15 +3,12 @@
 .sub-mv {
   position: relative;
   height: rem(460);
-  // background-image: url(../images/common/sp-submv-campaign-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   @include mq(md) {
-    // background-image: url(../images/common/pc-submv-campaign-img.jpg);
     height: rem(548);
   }
 }
-
 
 .sub-mv__inner,
 .sub-mv__img,

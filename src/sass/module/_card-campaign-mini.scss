@@ -28,7 +28,6 @@
   flex-grow: 1;
   padding: rem(16) rem(16) rem(24) rem(16);
   @include mq(md) {
-    // padding: rem(24) rem(16) rem(40) rem(16);
   }
 }
 
@@ -65,9 +64,6 @@
   text-align: center;
   margin-top: rem(8);
   @include mq(md) {
-    // margin-top: rem(16);
-    // font-size: rem(16);
-    // line-height: calc(24 / 16);
   }
 }
 

@@ -7,7 +7,6 @@
 .page-404__inner {
   color: $base;
   font-family: $third-font-family;
- 
   position: relative;
   display: flex;
   flex-direction: column;
@@ -16,7 +15,6 @@
   padding: rem(40);
   @include mq(md){
     padding: rem(80);
-  
   }
 }
 
@@ -26,16 +24,12 @@
   top: rem(-25);
   left: rem(15);
   background-image: url(../images/common/404img.png);
-  // left: calc(50% - min(48.7vw, 39.9rem));
-  // top: rem(-40);
   width: rem(345);
   height: rem(345);
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
-  // z-index: -10000;
   @include mq(md) {
-    // top: rem(-80);
     width: rem(698);
     height: rem(698);
   }
@@ -44,7 +38,6 @@
 .page-404__title {
   font-size: rem(80);
   letter-spacing: 0.5em;
-  // letter-spacing: 0.54em;
   text-indent: 0.5em;
   @include mq(md) {
     font-size: rem(160);
@@ -56,13 +49,11 @@
   font-size: rem(16);
   line-height: calc(24/16);
   @include mq(md) {
-    // margin-top: rem(24);
   }
 }
 
 .page-404__btn {
   text-align: center;
-  // margin-top: rem(40);
   @include mq(md) {
     margin-top: rem(0);
   }

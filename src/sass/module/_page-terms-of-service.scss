@@ -15,7 +15,6 @@
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
-  // z-index: -10000;
   @include mq(md) {
     top: rem(-80);
     width: rem(301);
@@ -25,12 +24,7 @@
 
 .page-terms-of-service__inner {
   max-width: rem(830);
-  // margin-top: rem(8);
   margin-inline: auto;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // text-align: center;
   padding-right: $padding-sp;
   padding-left: $padding-sp;
   margin-right: auto;
@@ -39,14 +33,9 @@
   font-family: "Noto Sans JP";
 }
 
-// .page-thanks__container {
-//   color: $gray3;
-//   font-family: "Noto Sans JP" ;
-// }
-
 .page-terms-of-service__title {
   font-size: rem(24);
-  @include mq(md){
+  @include mq(md) {
     font-size: rem(32);
   }
 }
@@ -54,10 +43,9 @@
 .page-terms-of-service__content {
   margin-top: rem(40);
   font-size: rem(16);
-  // font-size: rem(14)!important;
   line-height: calc(32 / 16);
   letter-spacing: 0.01em;
-  @include mq(md){
+  @include mq(md) {
     font-size: rem(12);
   }
 }
@@ -68,8 +56,6 @@
 }
 
 .page-terms-of-service ul {
-  // margin-left: rem(20);
-  // list-style: disc;
 }
 
 .page-terms-of-service__content ol {

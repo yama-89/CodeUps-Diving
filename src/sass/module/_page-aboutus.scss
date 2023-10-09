@@ -15,7 +15,6 @@
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
-  // z-index: -10000;
   @include mq(md) {
     top: rem(-144);
     width: rem(301);
@@ -42,7 +41,6 @@
     height: 100%;
     width: 100%;
     max-width: calc(128 / 345) * 100%;
-    // margin-top: rem(-26);
     margin-top: rem(-80);
   }
 }
@@ -58,7 +56,6 @@
   aspect-ratio: 281/186;
   height: 100%;
   width: 100%;
-  // max-width: calc(281 / 345) * 100%;
   @include mq(md) {
     margin-left: -19%;
     aspect-ratio: 880/581;
@@ -74,7 +71,6 @@
 }
 
 .page-aboutus__text-container {
-  // position: relative;
   @include mq(md) {
     display: flex;
     gap: rem(40);
@@ -90,7 +86,6 @@
 
 .page-aboutus__text-container {
   @include mq(md) {
-    
   }
 }
 
@@ -102,13 +97,11 @@
   line-height: calc(40 / 40);
   font-weight: $regular;
   color: $base;
-  // margin-top: rem(40);
   @include mq(md) {
     width: 100%;
     position: initial;
     font-size: rem(80);
     line-height: calc(100 / 80);
-    // color: $base;
     max-width: rem(400);
     margin-top: 0;
   }

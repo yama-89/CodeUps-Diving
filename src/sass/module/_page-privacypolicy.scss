@@ -15,7 +15,6 @@
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
-  // z-index: -10000;
   @include mq(md) {
     top: rem(-80);
     width: rem(301);
@@ -25,12 +24,7 @@
 
 .page-privacypolicy__inner {
   max-width: rem(830);
-  // margin-top: rem(8);
   margin-inline: auto;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // text-align: center;
   padding-right: $padding-sp;
   padding-left: $padding-sp;
   margin-right: auto;
@@ -38,11 +32,6 @@
   color: $gray3;
   font-family: "Noto Sans JP";
 }
-
-// .page-thanks__container {
-//   color: $gray3;
-//   font-family: "Noto Sans JP" ;
-// }
 
 .page-privacypolicy__title {
   font-size: rem(24);
@@ -54,7 +43,6 @@
 .page-privacypolicy__content {
   margin-top: rem(40);
   font-size: rem(16);
-  // font-size: rem(14)!important;
   line-height: calc(32 / 16);
   letter-spacing: 0.04em;
   @include mq(md){
@@ -69,8 +57,6 @@
 }
 
 .page-privacypolicy ul {
-  // margin-left: rem(20);
-  // list-style: disc;
 }
 
 .page-privacypolicy__content ol:nth-of-type(1) {
