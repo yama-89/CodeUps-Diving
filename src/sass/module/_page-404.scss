@@ -1,8 +1,5 @@
 @use "global" as *;
 
-.error {
-  background-color: $black;
-}
 
 .page-404 {
 }
@@ -16,13 +13,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: rem(40);
+  @include mq(md){
+    padding: rem(80);
+  
+  }
 }
 
 .page-404__inner::after {
   position: absolute;
   content: "";
-  top: 0;
-  left: 0;
+  top: rem(-25);
+  left: rem(15);
   background-image: url(../images/common/404img.png);
   // left: calc(50% - min(48.7vw, 39.9rem));
   // top: rem(-40);
@@ -42,6 +44,8 @@
 .page-404__title {
   font-size: rem(80);
   letter-spacing: 0.5em;
+  // letter-spacing: 0.54em;
+  text-indent: 0.5em;
   @include mq(md) {
     font-size: rem(160);
   }
@@ -52,14 +56,19 @@
   font-size: rem(16);
   line-height: calc(24/16);
   @include mq(md) {
-    margin-top: rem(24);
+    // margin-top: rem(24);
   }
 }
 
 .page-404__btn {
   text-align: center;
-  margin-top: rem(40);
+  // margin-top: rem(40);
   @include mq(md) {
-    margin-top: rem(80);
+    margin-top: rem(0);
   }
+}
+
+
+.error {
+  background-color: $black;
 }

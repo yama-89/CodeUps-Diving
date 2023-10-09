@@ -23,6 +23,10 @@
   }
 }
 
+.page-aboutus__container {
+  position: relative;
+}
+
 .page-aboutus__img-box {
   @include mq(md){
     display: flex;
@@ -70,15 +74,11 @@
 }
 
 .page-aboutus__text-container {
+  // position: relative;
   @include mq(md) {
     display: flex;
     gap: rem(40);
     align-items: center;
-  }
-}
-
-.page-aboutus__text-container {
-  @include mq(md) {
     position: absolute;
     top: 39%;
     left: 56%;
@@ -88,10 +88,16 @@
   }
 }
 
+.page-aboutus__text-container {
+  @include mq(md) {
+    
+  }
+}
+
 .page-aboutus__text-title {
   position: absolute;
-  top: calc(75% - min(40vh, 39.9rem));
-  left: 10%;
+  top: 5%;
+  left: 7%;
   font-size: rem(40);
   line-height: calc(40 / 40);
   font-weight: $regular;

@@ -2,14 +2,26 @@
 
 .sub-mv {
   position: relative;
-  height: rem(460);
-  background-image: url(../images/common/sp-submv-campaign-img.jpg);
+  // height: rem(460);
+  // background-image: url(../images/common/sp-submv-campaign-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   @include mq(md) {
-    background-image: url(../images/common/pc-submv-campaign-img.jpg);
+    // background-image: url(../images/common/pc-submv-campaign-img.jpg);
     height: rem(548);
   }
+}
+
+
+.sub-mv__inner,
+.sub-mv__img,
+.sub-mv__img picture,
+.sub-mv__img img {
+  height: inherit;
+}
+
+.sub-mv__img img {
+  object-fit: cover;
 }
 
 .sub-mv__title {
@@ -29,22 +41,3 @@
     top: 60%;
   }
 }
-
-// .mv__title {
-//   font-size: rem(40);
-//   letter-spacing: 0.54em;
-//   text-indent: 0.54em;
-
-//   @include mq("md") {
-//     font-size: rem(80);
-//     line-height: calc(100 / 80);
-//   }
-// }
-
-// .mv__sub-title {
-//   margin-top: rem(10);
-//   font-family: $base-font-family;
-//   font-size: rem(20);
-//   @include mq("md") {
-//   }
-// }

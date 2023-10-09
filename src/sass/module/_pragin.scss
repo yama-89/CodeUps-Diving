@@ -14,17 +14,17 @@
   font-family: $third-font-family;
   background-color: transparent;
   border: rem(1) solid $black;
-  padding: rem(6) rem(10);
-  margin: 0 rem(8);
+  padding: rem(6) rem(12);
+  margin: 0 rem(6);
   white-space: nowrap;
   transition: 0.2s ease-in-out;
   text-align: center;
   text-decoration: none;
 }
 .wp-pagenavi a:hover {
-  color: $black;
-  background-color: #a09d71;
-  border-color: #999;
+  color: $base;
+  background-color: $black;
+  border-color: $black;
 }
 .wp-pagenavi span.current {
   color: $black;
@@ -36,5 +36,6 @@
 .wp-pagenavi .previouspostslink,
 .wp-pagenavi .nextpostslink {
   padding: rem(3) rem(15);
+  margin: 0 rem(40);
 }
 

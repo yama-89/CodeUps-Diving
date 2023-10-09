@@ -213,6 +213,15 @@
       <!-- 下層ページのメインビュー -->
       <section id="sub-mv" class="sub-mv">
         <div class="sub-mv__inner">
+          <div class="sub-mv__img">
+            <picture>
+            <source
+              srcset="assets/images/common/blog-pc-sub-mv-img.jpg"
+              media="(min-width: 768px)"
+            />
+            <img src="assets/images/common/blog-sp-sub-mv-img.jpg" alt="sub-blog-mv" />
+          </picture>
+        </div>
           <h2 class="sub-mv__title">Blog</h2>
         </div>
       </section>
@@ -427,12 +436,14 @@
               </div>
               <div class="archive-blog__pagenav pagenav">
                 <div class="wp-pagenavi">
-                  <a class="previouspostslink" rel="prev" href="#">PREV</a>
+                  <a class="previouspostslink" rel="prev" href="#">＜</a>
                   <span class="current">1</span>
                   <a class="page smaller" href="#">2</a>
                   <a class="page smaller" href="#">3</a>
-                  <a class="page larger" href="#">4</a>
-                  <a class="nextpostslink" rel="next" href="#">NEXT</a>
+                  <a class="page smaller" href="#">4</a>
+                  <a class="page smaller u-desktop" href="#">5</a>
+                  <a class="page larger u-desktop" href="#">6</a>
+                  <a class="nextpostslink" rel="next" href="#">＞</a>
                 </div>
               </div>
             </div>
