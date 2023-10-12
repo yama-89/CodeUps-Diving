@@ -162,8 +162,8 @@ tabContent.eq(index).addClass("is-active");
 });
 
 // アコーディオン
-$(".faq-item:first-of-type .js-faq-item__content").css("display", "block");
-  $(".faq-item:first-of-type .js-faq-item__title").addClass("open");
+$(".faq-item .js-faq-item__content").css("display", "block");
+  $(".faq-item .js-faq-item__title").addClass("open");
   $(".js-faq-item__title").on("click", function () {
     $(this).next().slideToggle(200);
     $(this).toggleClass("open", 200);

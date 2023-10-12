@@ -1,6 +1,7 @@
 @use "global" as *;
 
-.archive-blog-cards {
-
-
-}
+// .archive-blog-cards {
+//   @include mq(md) {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+// }

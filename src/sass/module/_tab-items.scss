@@ -15,10 +15,13 @@
 .tab-items__item {
 }
 
+
+
 .tab-items__item a {
   font-size: rem(14);
   line-height: calc(22 / 14);
   color: $black;
+  background-color: $base;
   padding: rem(5) rem(20);
   border: rem(1) solid $black;
   text-align: center;
@@ -26,6 +29,16 @@
   display: block;
   width: 100%;
   cursor: pointer;
+}
+
+.tab-items__item.current a {
+  background-color: $black;
+  color: $base;
+  border: rem(1) solid $black;
+}
+
+.tab-items__item.current a:hover {
+  border: rem(1) solid $black;
 }
 
 .tab-items__item a:hover {
