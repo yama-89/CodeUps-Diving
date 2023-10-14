@@ -161,6 +161,26 @@ tabContent.removeClass("is-active");
 tabContent.eq(index).addClass("is-active");
 });
 
+// フッターリンクをクリックしたときの処理
+$("footer a[data-tab]").on("click", function (e) {
+  e.preventDefault(); // リンクのデフォルト動作を無効化
+
+  // クリックされたリンクの親要素のインデックスを取得
+  const index = $(this).parent().index();
+
+  const mainTabPosition = tabContent.eq(index).offset().top;
+  $("html, body").animate({ scrollTop: mainTabPosition }, 300); // 500ミリ秒かけてスクロール
+
+  // すべてのタブとコンテンツを非アクティブに
+  tabButton.removeClass("is-active");
+  tabContent.removeClass("is-active");
+
+  // クリックされたリンクに対応するタブとコンテンツをアクティブに
+  tabButton.eq(index).addClass("is-active");
+  tabContent.eq(index).addClass("is-active");
+});
+
+
 // アコーディオン
 $(".faq-item .js-faq-item__content").css("display", "block");
   $(".faq-item .js-faq-item__title").addClass("open");
