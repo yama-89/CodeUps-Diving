@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.blog-block__inner {
+.block-2col__inner {
   position: relative;
   @include mq(md) {
     display: flex;
@@ -8,7 +8,7 @@
   }
 }
 
-.blog-block__inner::before {
+.block-2col__inner::before {
   background-image: url(../images/common/sp-tab-img.png);
   content: "";
   position: absolute;
@@ -28,7 +28,7 @@
   }
 }
 
-.blog-block__main {
+.block-2col__main {
   max-width: rem(600);
   margin-inline: auto;
   @include mq(md) {
@@ -37,7 +37,7 @@
   }
 }
 
-.blog-block__side {
+.block-2col__side {
   max-width: calc(294 / 345) * 100%;
   margin-inline: auto;
   @include mq(md) {

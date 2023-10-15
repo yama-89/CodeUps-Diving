@@ -27,8 +27,15 @@
   // margin: auto;
   position: absolute;
   left: rem(10);
-  top: rem(5);
+  top: rem(7);
   width: 0; /* IE崩れ防止 */
+  transform: rotate(90deg);
+  transition: transform .3s;
+}
+
+.archive-lists__year.open::before {
+  transform: rotate(0deg);
+
 }
 
 .archive-lists__month {

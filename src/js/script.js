@@ -192,6 +192,17 @@ $(".faq-item .js-faq-item__content").css("display", "block");
    });
   });
 
+// アーカイブアコーディオン
+$(".archive-lists .js-year").on("click", function () {
+  // クリックされた年に関連する月のリストを探し、スライドトグルで表示・非表示を切り替える
+  $(this).find(".js-month").slideToggle(200);
+  $(this).toggleClass("open");
+
+  // 他の年の月リストを閉じる
+  // $(".archive-lists .js-year").not(this).find(".js-month").slideUp(200);
+  // $(".archive-lists .js-year").not(this).removeClass("open");
+});
+
 
   // ==========================================================================
   // コース一覧の拡大画像モーダル処理
