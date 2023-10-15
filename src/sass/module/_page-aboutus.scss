@@ -22,7 +22,7 @@
   }
 }
 
-.page-aboutus__container {
+.page-aboutus__inner {
   position: relative;
 }
 
@@ -81,11 +81,6 @@
     transform: translate(-50%, -50%);
     width: 100%;
     max-width: rem(840);
-  }
-}
-
-.page-aboutus__text-container {
-  @include mq(md) {
   }
 }
 

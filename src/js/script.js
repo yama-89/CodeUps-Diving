@@ -120,7 +120,7 @@ jQuery(function ($) {
 
 //要素の取得とスピードの設定
 var box = $(".js-colorbox"),
-  speed = 700;
+  speed = 400;
 
 //.js-colorboxの付いた全ての要素に対して下記の処理を行う
 box.each(function () {
@@ -168,16 +168,9 @@ $("footer a[data-tab]").on("click", function (e) {
   // クリックされたリンクの親要素のインデックスを取得
   const index = $(this).parent().index();
 
-  const mainTabPosition = tabContent.eq(index).offset().top;
-  $("html, body").animate({ scrollTop: mainTabPosition }, 300); // 500ミリ秒かけてスクロール
-
-  // すべてのタブとコンテンツを非アクティブに
-  tabButton.removeClass("is-active");
-  tabContent.removeClass("is-active");
-
-  // クリックされたリンクに対応するタブとコンテンツをアクティブに
-  tabButton.eq(index).addClass("is-active");
-  tabContent.eq(index).addClass("is-active");
+  // スクロールとタブの切り替えを同時に行う
+  $("html, body").animate({ scrollTop: tabContent.eq(index).offset().top }, 300);
+  tabButton.eq(index).trigger("click"); // タブクリックをシミュレート
 });
 
 

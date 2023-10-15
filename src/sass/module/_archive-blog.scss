@@ -1,63 +1,15 @@
 @use "global" as *;
 
-// .archive-blog__container {
-//   position: relative;
-//   // padding: 0 rem(5);
-//   @include mq(md) {
-//     display: flex;
-//     gap: rem(80);
-//   }
-// }
 
-// .archive-blog__container::before {
-//   background-image: url(../images/common/sp-tab-img.png);
-//   content: "";
-//   position: absolute;
-//   left: calc(50% - min(48.7vw, 39.9rem));
-//   top: rem(-40);
-//   width: rem(120);
-//   height: rem(55);
-//   background-image: url(../images/common/pc-voice-fish.png);
-//   background-repeat: no-repeat;
-//   background-size: contain;
-//   display: inline-block;
-//   z-index: -1;
-//   @include mq(md) {
-//     top: rem(-80);
-//     width: rem(301);
-//     height: rem(138);
-//   }
-// }
-
-// .archive-blog__main {
-//   max-width: rem(600);
-//   margin-inline: auto;
-//   @include mq(md) {
-//     width: 100%;
-//     max-width: calc(707 / 1080) * 100%;
-//   }
-// }
 
 .archive-blog__cards {
-  display: grid;
-  // column-gap: rem(40);
-  row-gap: rem(40);
-  padding: 0 rem(5);
-  @include mq(md) {
-    padding: 0;
-    row-gap: rem(80);
-    // grid-template-columns: repeat(2, 1fr);
-  }
+  // padding: 0 rem(5);
+  // @include mq(md) {
+  //   padding: 0;
+  // }
 }
 
-// .archive-blog__side {
-//   max-width: calc(294 / 345) * 100%;
-//   margin-inline: auto;
-//   @include mq(md) {
-//     width: 100%;
-//     max-width: calc(294 / 1080) * 100%;
-//   }
-// }
+
 
 .archive-blog__pagenav {
   margin-top: rem(72);

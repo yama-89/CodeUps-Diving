@@ -1,19 +1,13 @@
 @use "global" as *;
 
-.blog-cards {
+
+.archive-campaign-cards {
   display: grid;
   row-gap: rem(40);
   column-gap: rem(40);
-  padding: 0 rem(5);
+  grid-template-columns: 1fr;
   @include mq("md") {
     row-gap: rem(80);
-    padding: 0;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.blog-cards--archive {
-  @include mq("md") {
     grid-template-columns: repeat(2, 1fr);
   }
 }

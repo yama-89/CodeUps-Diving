@@ -1,9 +1,9 @@
 @use "global" as *;
 
-.top-page-aboutus {
+.layout-page-thanks {
   margin-top: rem(52);
 
   @include mq(md) {
-    margin-top: rem(224);
+    margin-top: rem(150);
   }
 }

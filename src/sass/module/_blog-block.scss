@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.blog-block__container {
+.blog-block__inner {
   position: relative;
   @include mq(md) {
     display: flex;
@@ -8,7 +8,7 @@
   }
 }
 
-.blog-block__container::before {
+.blog-block__inner::before {
   background-image: url(../images/common/sp-tab-img.png);
   content: "";
   position: absolute;
