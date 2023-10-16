@@ -173,6 +173,29 @@ $("footer a[data-tab]").on("click", function (e) {
   tabButton.eq(index).trigger("click"); // タブクリックをシミュレート
 });
 
+// 他ページからの遷移
+//タブへダイレクトリンクの実装
+    //リンクからハッシュを取得
+    // var hash = location.hash;
+    // hash = (hash.match(/^#tab_panel-\d+$/) || [])[0];
+    // //リンクにハッシュが入っていればtabnameに格納
+    // if ($(hash).length) {
+    //     var tabname = hash.slice(1);
+    // } else {
+    //     var tabname = "license-tab";
+    // }
+    // //コンテンツ非表示・タブを非アクティブ
+    // $(".page-information__container .tab-button").removeClass("is-active");
+    // $(".js-content .page-information__container").removeClass("is-active");
+    // //何番目のタブかを格納
+    // var tabno = $(".js-content" + tabname).index();
+    // //コンテンツ表示
+    // $(".js-content .page-information__container").eq(tabno).addClass("is-active");
+    // //タブのアクティブ化
+    // $(".page-information__container .tab-button").eq(tabno).addClass("is-active");
+
+
+
 
 
 // アコーディオン
