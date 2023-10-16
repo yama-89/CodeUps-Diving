@@ -25,23 +25,17 @@
   background: $base;
   color: $black;
   border: rem(1) solid $base;
-
 }
 .button.button--reverse:hover {
-  transform: translate(rem(2),rem(2));
+  transform: translate(rem(2), rem(2));
   border: rem(1) solid $base;
-
 }
 
 .button.button--reverse::before {
   border: rem(1) solid $base;
-
-
 }
 .button.button--reverse:hover::before {
   border: none;
-
-
 }
 
 .button::after {
@@ -80,7 +74,6 @@
 
 .button.button--reverse span::after {
   content: url(../images/common/button-g.svg);
-
 }
 
 .button:hover span::after {

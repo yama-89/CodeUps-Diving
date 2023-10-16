@@ -35,9 +35,7 @@
 .card-blog-mini__body {
   width: 100%;
   max-width: calc(125 / 262) *100%;
-  // margin-top: rem(24);
   @include mq(md) {
-    // margin-top: rem(21);
   }
 }
 

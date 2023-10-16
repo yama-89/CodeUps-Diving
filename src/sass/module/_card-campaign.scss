@@ -70,7 +70,6 @@
 .card-campaign__title.card-campaign__title--campaign {
   @include mq(md){
     font-size: rem(24);
-  
   }
 }
 
@@ -98,7 +97,7 @@
   }
 }
 
-.card-campaign__price-box.card-campaign__price-box--campagin {
+.card-campaign__price-box.card-campaign__price-box--campaign {
   @include mq(md){
     gap: rem(40);
   }

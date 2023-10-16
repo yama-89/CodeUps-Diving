@@ -120,7 +120,7 @@ jQuery(function ($) {
 
 //要素の取得とスピードの設定
 var box = $(".js-colorbox"),
-  speed = 400;
+  speed = 500;
 
 //.js-colorboxの付いた全ての要素に対して下記の処理を行う
 box.each(function () {
@@ -172,6 +172,7 @@ $("footer a[data-tab]").on("click", function (e) {
   $("html, body").animate({ scrollTop: tabContent.eq(index).offset().top }, 300);
   tabButton.eq(index).trigger("click"); // タブクリックをシミュレート
 });
+
 
 
 // アコーディオン
