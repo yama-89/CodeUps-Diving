@@ -31,11 +31,9 @@
   @include mq(md) {
     max-width: rem(750);
   }
-  
 }
 
 .page-contact__container {
-  
 }
 
 .page-contact__check-box {
@@ -44,8 +42,25 @@
 }
 .page-contact__check-box p {
   text-align: left;
+  position: relative;
   @include mq(md) {
     text-align: center;
+  }
+}
+.page-contact__check-box p::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: -9%;
+  width: rem(22);
+  height: rem(22);
+  transform: translateY(-50%);
+  background: $base;
+  border: rem(1) solid $black;
+  display: block;
+  @include mq(md) {
+  left: 18%;
+
   }
 }
 
