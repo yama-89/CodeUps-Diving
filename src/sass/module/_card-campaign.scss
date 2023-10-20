@@ -33,10 +33,9 @@
 }
 
 .card-campaign__body.card-campaign__body--campaign {
-  @include mq(md){
-    padding:rem(24) rem(24) rem(40) rem(24);
+  @include mq(md) {
+    padding: rem(24) rem(24) rem(40) rem(24);
   }
-
 }
 
 .card-campaign__title-wrap {
@@ -61,14 +60,14 @@
   line-height: calc(24 / 16);
   padding-bottom: rem(8);
   border-bottom: rem(1) solid $black;
-  @include mq(md){
+  @include mq(md) {
     margin-top: rem(4);
     padding-bottom: 0;
   }
 }
 
 .card-campaign__title.card-campaign__title--campaign {
-  @include mq(md){
+  @include mq(md) {
     font-size: rem(24);
   }
 }
@@ -98,7 +97,7 @@
 }
 
 .card-campaign__price-box.card-campaign__price-box--campaign {
-  @include mq(md){
+  @include mq(md) {
     gap: rem(40);
   }
 }
@@ -134,40 +133,30 @@
 }
 
 .card-campaign__text {
-  @include mq(md){
-    margin-top: rem(24);
-    font-size: rem(16);
-    line-height: calc(24/16);
-    color: $gray3;
-    font-weight: $normal;
-  }
+  margin-top: rem(24);
+  font-size: rem(16);
+  line-height: calc(24 / 16);
+  color: $gray3;
+  font-weight: $normal;
 }
 
 .card-campaign__date,
 .card-campaign__contact {
-  @include mq(md){
-    display: block;
-    color: $black;
-    text-align: center;
-  }
+  display: block;
+  color: $black;
+  text-align: center;
 }
 .card-campaign__date {
-  @include mq(md){
-    margin-top: rem(26);
-  }
+  margin-top: rem(26);
 }
 
 .card-campaign__contact {
-  @include mq(md){
-    font-size: rem(14);
-    line-height: calc(18/14);
-    margin-top: rem(7);
-  }
+  font-size: rem(14);
+  line-height: calc(18 / 14);
+  margin-top: rem(7);
 }
 
 .card-campaign__btn {
-  @include mq(md){
-    margin-top: rem(16);
-    text-align: center;
-  }
+  margin-top: rem(16);
+  text-align: center;
 }
